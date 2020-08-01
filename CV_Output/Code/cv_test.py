@@ -14,6 +14,11 @@ start = timeit.default_timer()
 #     fi.close()
 #     #f.astype('<H').tofile(name)
 
+def array_to_jpg_image(f):
+    l=(f*(255/4095))//1
+    gray=np.uint8(l)
+    im = Image.fromarray(gray)
+    return im
 
 def mask_t(l,flag,t):
     d=l.shape
@@ -28,19 +33,26 @@ def mask_t(l,flag,t):
 
 def correrct(l,mask,mode=0):
     if mode==0:
-        dst=cv.inpaint(l,mask,3,cv.INPAINT_NS)                   
+        dst=cv.inpaint(l,mask,10,cv.INPAINT_NS)                   
     if mode==1:
-        dst=cv.inpaint(l,mask,3,cv.INPAINT_TELEA)
+        dst=cv.inpaint(l,mask,10,cv.INPAINT_TELEA)
     return dst    
 
 
-f="horiz_data.tif"
+f=r"../horiz_data.tif"
+
+
+
 img = Image.open(f)
-
 l = np.array(img)
-t=Image.fromarray(correrct(l,mask_t(l,0,300),1))
+inpaint_arr = correrct(l,mask_t(l,0,300),1)
+t=Image.fromarray(inpaint_arr)
+
+
 t.save("cv_horiz_te.tif")
+
+array_to_jpg_image(inpaint_arr).save("cv_horiz_te.jpg")
+
+
 stop = timeit.default_timer()
-
-
 print('Time: ', stop - start)
