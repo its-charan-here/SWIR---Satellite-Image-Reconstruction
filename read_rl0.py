@@ -18,8 +18,7 @@ def mask_t(f,flag,t,output):
     elif flag == 1:        
         temp=np.where(l>=t)
         k[temp]=255
-                        
-                        
+                       
 
     print(l,"\n",k)
     print(flag,t)
@@ -32,7 +31,6 @@ def con_rl(name,byte): # converter function ,
     final=f
     name=name[:-4]+"_new.rl0"
     fi=open(name,"wb")
-
     for i in range(d[0]):
         for j in range(d[1]):
             fi.write(int(f[i][j]).to_bytes(byte, 'big'))
@@ -70,8 +68,13 @@ def correction(f,mask,d,output='corrected_img.npy'): # error correct7ion , mask 
 if __name__ == "__main__":
     
     start = timeit.default_timer()
+<<<<<<< HEAD
     
     f="vert_data.tif"
+=======
+    d=(8238,6000)
+    f="hori_data.tif"
+>>>>>>> ff8e77d5c2e74df02b5e03f7612a08a1148e2e01
     t=350
     img = Image.open(f)
     flag=0 
