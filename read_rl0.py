@@ -68,7 +68,7 @@ if __name__ == "__main__":
     
     start = timeit.default_timer()
     d=(8238,6000)
-    f="black.rl0"
+    f="hori_data.tif"
     t=350
     flag=0 
     output='mask_input.npy'
