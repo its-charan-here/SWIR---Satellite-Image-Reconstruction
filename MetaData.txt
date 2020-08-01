@@ -1,0 +1,8 @@
+Scans: 8238
+Pix  : 6000
+Date : 15-MAY-2017
+Type : General Raster Unsigned Short 2 Bytes 12 bits 
+Tentaive Locations in respective file for degraded detectors: 
+Filename1: R2A_AWA_102_059_B5.rl0 Locations: 1057 1345 3533 etc
+Filename2: R2A_AWB_102_059_B5.rl0 Locations: 322 950 547 1348 3755 2887 etc
+FileSize : 8238 x 6000 x 2 = 98856000 bytes
