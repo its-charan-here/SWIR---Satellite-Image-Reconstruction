@@ -5,6 +5,11 @@ import sys
 
 infile = sys.argv[1]
 
+if len(sys.argv) == 3:
+	extension = sys.argv[2]
+else:
+	extension = "png"
+
 im = Image.open(infile)
 
 im_array = np.asarray(im)
@@ -24,7 +29,9 @@ for y in vertical:
 	
 mask_im = Image.fromarray(mask)
 
-mask_im.save("mask.png")
+
+
+mask_im.save(infile[:-4] + "_dropoutmask." + extension)
 
 
 #print(im_array)
