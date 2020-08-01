@@ -33,9 +33,9 @@ def mask_t(l,flag,t):
 
 def correrct(l,mask,mode=0):
     if mode==0:
-        dst=cv.inpaint(l,mask,10,cv.INPAINT_NS)                   
+        dst=cv.inpaint(l,mask,3,cv.INPAINT_NS)                   
     if mode==1:
-        dst=cv.inpaint(l,mask,10,cv.INPAINT_TELEA)
+        dst=cv.inpaint(l,mask,3,cv.INPAINT_TELEA)
     return dst    
 
 
