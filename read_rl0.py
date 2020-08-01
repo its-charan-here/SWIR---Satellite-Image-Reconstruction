@@ -1,5 +1,7 @@
 import os
 import sys
+import PIL
+from PIL import Image
 import numpy as np
 import timeit
 
@@ -67,15 +69,18 @@ def correction(f,mask,d,output='corrected_img.npy'): # error correct7ion , mask 
 if __name__ == "__main__":
     
     start = timeit.default_timer()
-    d=(8238,6000)
-    f="black.rl0"
+    
+    f="vert_data.tif"
     t=350
+    img = Image.open(f)
     flag=0 
-    output='mask_input.npy'
-    fi=np.fromfile(f,dtype="uint16").reshape(d)
-    l=fi[500:1000,500:1000]
-    mask_t(l,flag,t,output)
-    np.save('image_input.npy',l)
+    img_arr = np.array(img)
+    output='mask_verti.npy'
+    
+    mask_t(img_arr,flag,t,output)
+    
+    np.save('verti_input.npy',l)
+    
     stop = timeit.default_timer()
     print('Time: ', stop - start)
 
