@@ -16,8 +16,7 @@ def mask_t(f,flag,t,output):
     elif flag == 1:        
         temp=np.where(l>=t)
         k[temp]=255
-                        
-                        
+                       
 
     print(l,"\n",k)
     print(flag,t)
@@ -29,7 +28,6 @@ def con_rl(name,byte): # converter function ,
     final=f
     name=name[:-4]+"_new.rl0"
     fi=open(name,"wb")
-
     for i in range(d[0]):
         for j in range(d[1]):
             fi.write(int(f[i][j]).to_bytes(byte, 'big'))
