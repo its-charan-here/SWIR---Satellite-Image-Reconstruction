@@ -32,11 +32,11 @@ def correrct(l,mask,mode=0):
     return dst    
 
        
-f="vert_data.tif"
+f="horiz_data.tif"
 img = Image.open(f)
 
 l = np.array(img)
-t=Image.fromarray(correrct(l,mask_t(l,0,300)))
-t.save("cv_vert.tif")
+t=Image.fromarray(correrct(l,mask_t(l,0,300),1))
+t.save("cv_horiz_te.tif")
 stop = timeit.default_timer()
 print('Time: ', stop - start)
