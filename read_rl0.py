@@ -24,6 +24,7 @@ def mask_t(f,flag,t,output):
     print(l,"\n",k)
     print(flag,t)
     np.save(output,k)
+    return k
      
     
 def con_rl(name,byte): # converter function , 
@@ -77,9 +78,9 @@ if __name__ == "__main__":
     img_arr = np.array(img)
     output='mask_verti.npy'
     
-    mask_t(img_arr,flag,t,output)
-    
-    np.save('verti_input.npy',l)
+    t=Image.fromarray(mask_t(img_arr,flag,t,output))
+    t.save("mask.tif")
+    np.save('verti_input.npy',img_arr)
     
     stop = timeit.default_timer()
     print('Time: ', stop - start)
