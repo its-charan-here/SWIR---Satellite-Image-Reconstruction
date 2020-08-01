@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SIH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/NAV.CSS">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/icomoon/style.css">
+  <script  src="/stylesheets/load.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <!--Bootstrap JS-->
+  <link href="https://fonts.googleapis.com/css2?family=Crushed&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+
+  <div class="container">
+    <div class="container-fluid"></div>
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <a class="navbar-brand" href="/">The    ones    N    zeros</a>
+
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+
+
+      
+    <ul class="nav navbar-nav navbar-right">
+      <!-- <li><a href="#guide">Guide </a></li>
+      <li><a href="#illust">Illustration</a></li>
+      <li><a href="#try">Try Now</a></li>-->
+      <!-- <li><a href="#introo">Home </a></li> -->
+      
+      <!-- <li><a href="#agents-section">About </a></li> --> 
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+  </div>
+    
+</nav>
+<div class="container">
+<div class="jumbotron" style="margin-top: 10%;" >
+  
+  <!-- <form action="/uploadFile" enctype="multipart/form-data" method="POST"> 
+    <input type="file" name="myImage" accept="image/*" />
+    <input type="submit" value="Upload Photo"/>
+  </form>  -->
+  
+  <div class="row">
+    
+    <div class="col-lg-6 col-sm-12">
+      <div class="thumbnail team-member">
+        
+        
+        <!-- <img src="images/person_5.jpg" alt="Image" class="img-fluid"> -->
+        <%if(flag===1){%>
+          <img id="output" src="image.jpg">
+          <%} else if(flag===2){%>
+            <img id="output" src="image.jpg">
+            <%} else if(flag===3 || flag==4){%>
+              <img id="output" src="/input_image.jpg">
+             <%}else{%>
+            <img id="output">
+            <%}%>
+            
+            
+            
+            <div class="p-3" style="padding:6%;">
+              <h3 class="mb-2 cen">INPUT IMAGE</h3>
+              <!-- <span class="position">Real Estate Agent</span> -->
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        <div class="col-lg-6 col-sm-12">
+          <div class="thumbnail team-member">
+            
+            <% if(flag===1){
+              
+              %>
+                <img src="test_output/output.png"  >
+              <%} else if(flag===3){%>
+                <img id="output" src="cvoutput.jpg">
+              <%}else{%>
+                <img id="pic">
+                <%}%>
+                
+                
+                <div class="p-3" style="padding:6%;">
+                  <h3 class="mb-2 cen">OUTPUT IMAGE</h3>
+                  <!-- <span class="position">Real Estate Agent</span> -->
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- <div width="200px" height="200px"><img id="output" width="200" style="background-color: azure;"  >	
+          </div> -->
+          
+         
+
+        
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6">
+              <form method="post" enctype="multipart/form-data" action="/uploadFile" >
+                <input   type="file" name="file" accept="image/*" class="custom-file-input btn btn-info btn-lg">
+                <input class="submit btn btn-info btn-lg"  type="submit" value="Submit Image"  onclick="shows()">
+            </form>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6" >
+              <% if(flag===1){%>
+             
+                <a href="test_output/output.png"  download="PNG Image" >
+                  <button class=" btn btn-info btn-lg" style="margin-left: 10%;">PNG Image</button>
+                </a>
+                <a href="Images/OUTPUT/<%=download%>"  download="RAW Image" >
+                  <button class=" btn btn-info btn-lg">Raw Image</button>
+                </a>
+               
+              <%}else if(flag===3){
+              var a = names;
+              var b = "op_";
+              var c="rl0";
+              var position = 5;
+              var len=a.length;
+              var output = [a.slice(0, position), b, a.slice(position)].join('');
+              var download=[a.slice(0, position), b, a.slice(position,len-3),c].join('');
+              console.log("down="+download);
+                console.log(output);%>
+                <a href="cvoutput.jpg"  download="JPG Image" >
+                  <button class=" btn btn-info btn-lg" style="margin-left: 20%;">JPG Image</button>
+                </a>
+                <a href="cvoutput.tif"  download="RAW IMAGE" >
+                  <button class=" btn btn-info btn-lg">TIF Image</button>
+                </a>
+                
+              <%}%>
+
+            </div>
+          </div>
+        </div>
+
+         
+
+        <% if(flag===2 || flag===4){%>
+          <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+          
+          <br>
+          
+          <!-- <button class="btn btn-primary btn-lg" onclick="move()" id="sub" style="margin-top: 5%;" formaction="/upload1" >Process with method1</button> -->
+          <form action="/upload" method="POST" style="text-align: center; padding: 5%; margin-top: 2%;" class="toshow">
+         <button class="btn btn-primary btn-lg" id="sub" onclick="move()" style="margin-top: 5%;" formaction="/upload1" >Generative Inpainting</button>
+        <button class="btn btn-primary btn-lg" onclick="move()" style="margin-top: 5%;" formaction="/upload2">OpenCV Inpainting</button>
+        
+          </form>  
+          <%}%>
+
+  
+
+<%- include("../partials/footer") %>
