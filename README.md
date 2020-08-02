@@ -1,6 +1,6 @@
 
-<a href="https://mitwpu.edu.in">![MIT WPU Logo][mitlogo]</a>
-<a href="https://www.sih.gov.in/">![SIH Logo][sihlogo]</a>
+<a href="https://mitwpu.edu.in"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png"></a>
+<a href="https://www.sih.gov.in/"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.png"></a>
 
 # Project Aletheia
 
