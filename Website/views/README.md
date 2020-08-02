@@ -14,5 +14,5 @@ This folder contains :
 | index.ejs | This is the HOMEPAGE of the website |
 
 
-- images: All the images reconstructed in OpenCV are saved here 
+- All the images reconstructed in OpenCV are saved here 
 
