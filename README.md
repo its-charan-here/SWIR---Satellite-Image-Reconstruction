@@ -93,27 +93,46 @@ The proposed technique we plan to implement aims to utilise the newly unveiled p
 
 - Having 16-bit Images made it difficult for openly Available solutions to be able to read the data, hence we came up.with a conversion process to convert the data to unsigned 8 bit integers.
 
-			```
-			>>> matrix16
-			array([[1265, 1245, 1274, ..., 1286, 1291, 1220],
-			       [1297, 1282, 1272, ..., 1265, 1293, 1240],
-			       [1306, 1302, 1327, ..., 1254, 1311, 1269],
-			       ...,
-			       [1181, 1146, 1169, ..., 1274, 1277, 1240],
-			       [1251, 1189, 1203, ..., 1314, 1271, 1228],
-			       [1303, 1205, 1198, ..., 1223, 1209, 1171]], dtype=uint16)
-			>>> matrix8 = matrix16//256
-			>>> matrix8 = matrix8.astype(np.uint8)
-			>>> matrix8
-			array([[4, 4, 4, ..., 5, 5, 4],
-			       [5, 5, 4, ..., 4, 5, 4],
-			       [5, 5, 5, ..., 4, 5, 4],
-			       ...,
-			       [4, 4, 4, ..., 4, 4, 4],
-			       [4, 4, 4, ..., 5, 4, 4],
-			       [5, 4, 4, ..., 4, 4, 4]], dtype=uint8)
-			```
+```
+>>> matrix16
+array([[1265, 1245, 1274, ..., 1286, 1291, 1220],
+       [1297, 1282, 1272, ..., 1265, 1293, 1240],
+       [1306, 1302, 1327, ..., 1254, 1311, 1269],
+       ...,
+       [1181, 1146, 1169, ..., 1274, 1277, 1240],
+       [1251, 1189, 1203, ..., 1314, 1271, 1228],
+       [1303, 1205, 1198, ..., 1223, 1209, 1171]], dtype=uint16)
+>>> matrix8 = matrix16//256
+>>> matrix8 = matrix8.astype(np.uint8)
+>>> matrix8
+array([[4, 4, 4, ..., 5, 5, 4],
+       [5, 5, 4, ..., 4, 5, 4],
+       [5, 5, 5, ..., 4, 5, 4],
+       ...,
+       [4, 4, 4, ..., 4, 4, 4],
+       [4, 4, 4, ..., 5, 4, 4],
+       [5, 4, 4, ..., 4, 4, 4]], dtype=uint8)
+```
 
+- This caused a reduction in data thus making our solution less reliable and preferable at its job. Creating a new challenge for us.
+
+- ***In order to have a reliable and efficient solution, we reverted back to binary parsing and kept the data to its Predefined 16 bit format and Started working on a neural network which would be able to process this 16 bit data.***
+
+- ***This eliminated the option for us to borrow and reference code from other commercial and free solutions being used to reconstruct day to day images as they supported only 8 bit data.***
+
+## Developing a Neural Network for the Reconstruction
+
+- With the ability of sharing and Referencing pre-existing Neural Networks and Deep Learning Reconstruction Solutions out of scope, we went back to the roots of Machine Learning and Image Processing.
+
+- In order to implement the research done by many Enthusiasts over the years for our solution, we started by implementing the solution they provided and stripping it down to form a peocessinf algorithm for matrices od pixel values.
+
+- Once we had the barebones of our algorithm ready, we rigorously trained it with openly available datasets and the Given data.
+
+- After ensuring that we had generated enough epochs and weights to properly process 8-bit data, ***we rebased the program to test 16-bit data.***
+
+- After Various Modifications to every layer of the Neural Network, we had a model that could now train on 16-bit Satellite Imagery.
+
+- Using openly available LANDSAT data, and Datasets from Caggle combined with other sources, we **trained our model with 16-bit SWIR TIFF Images.**
 
 ### Citations
 ```
