@@ -9,7 +9,7 @@
 
 # Website
 
-The Gateway to our ~Project~
+The Website is a Gateway to our *Project* which makes it User Friendly and Easy to use
 
 
 Fonts:consists of all the fonts necessary for the website
@@ -28,5 +28,5 @@ npm install
 
 ```
 
-###Instructions
+### Instructions
 - Syntax : `node app.js`
