@@ -5,7 +5,6 @@ import os
 import timeit
 start = timeit.default_timer() 
 from tifffile import imsave
-
 def mask_t(l,flag,t):
     d=l.shape
     k= np.zeros(d,dtype=np.uint8)
@@ -17,13 +16,6 @@ def mask_t(l,flag,t):
         k[temp]=255
     return k
 
-def correrct(l,mask,mode=0):
-    if mode==0:
-        dst=cv.inpaint(l,mask,3,cv.INPAINT_NS)                   
-    if mode==1:
-        dst=cv.inpaint(l,mask,3,cv.INPAINT_TELEA)
-    return dst 
-
 f1="c____img_white.tiff"#input_one
 f2="c____output1.tif"#gans_output
 l=[]
@@ -31,15 +23,10 @@ img1 = Image.open(f1)
 l1 = np.array(img1)
 img2 = Image.open(f2)
 l2 = np.array(img2)
-
 mask=mask_t(l1,0,300)
-inpaint_arr = correrct(l1,mask)
+
 k = np.where(mask==255)
 l=l1
 print(l,"\n",l1)
-l[k]=(inpaint_arr+l2[k])/2
+l[k]=(l2[k])
 imsave('final_output.tif',l)
-
-
-stop = timeit.default_timer()
-print('Time: ', stop - start)
