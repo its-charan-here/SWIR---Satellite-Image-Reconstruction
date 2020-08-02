@@ -12,20 +12,23 @@ from tifffile import imsave
 import warnings
 
 
-from inpaint_model import InpaintCAModel
+from reconstruction_model import GAN_Reconstruction
 
 warnings.filterwarnings("ignore")
 
 
 print("python function called")
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--image', default='', type=str,
                     help='The filename of image to be completed.')
-parser.add_argument('--output', default='test_output/output.png', type=str,
+parser.add_argument('--output', default='test_output/output.tif', type=str,
                     help='Where to write output.')
-parser.add_argument('--checkpoint_dir', default='logs/118', type=str,
+parser.add_argument('--checkpoint_dir', default='logs/model_weights', type=str,
                     help='The directory of tensorflow checkpoint.')
 
+args, unknown = parser.parse_known_args()
 
 
 path_img = args.image
@@ -57,9 +60,8 @@ if __name__ == "__main__":
     FLAGS = ng.Config('sat_reconstruction.yml')
     print("hey")
     # ng.get_gpus(1)
-    args, unknown = parser.parse_known_args()
 
-    model = InpaintCAModel()
+    model = GAN_Reconstruction()
 
     image = tiff.imread(path_img)
     image1 = image
@@ -80,7 +82,6 @@ if __name__ == "__main__":
 
     for y in vertical:
         mask[:, y] = 65535
-        
 
     # print(mask)
     # print(image.shape)
@@ -124,8 +125,8 @@ if __name__ == "__main__":
         final_array = result[0][:, :, ::-1]*ratio//1
         final_array = final_array[:,:,1]
         final_array = final_array.astype(np.uint16)
-        print(final_array.shape)
-        print(final_array.dtype)
+        # print(final_array.shape)
+        # print(final_array.dtype)
         
         l = []
         l1 = image1
@@ -133,7 +134,6 @@ if __name__ == "__main__":
         mask=mask_t(l1,0,300)
         k = np.where(mask==255)
         l=l1
-        print(l,"\n",l1)
         l[k]=(l2[k])
             
         imsave(output_path,l)
