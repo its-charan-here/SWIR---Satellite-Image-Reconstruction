@@ -1,7 +1,7 @@
 
 <a href="https://mitwpu.edu.in"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png" height=100px></a><a href="https://www.sih.gov.in/"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.png" height=100px></a>
 
-# Project Aletheia
+![Peoject Aletheia Symbol][aletheia]
 
 ## NM391 The Ones n Zeros
 
@@ -149,7 +149,7 @@ array([[4, 4, 4, ..., 5, 5, 4],
 
 - Syntax : `python dropouts_mask.py (input_file) [OPTIONAL = output_extension png|tiff|tif]`
 
-
+[aletheia]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/aletheia.png
 [mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png
 [sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.png
 
