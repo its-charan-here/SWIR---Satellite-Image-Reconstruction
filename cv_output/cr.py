@@ -24,8 +24,8 @@ def correrct(l,mask,mode=0):
         dst=cv.inpaint(l,mask,3,cv.INPAINT_TELEA)
     return dst 
 
-    f1=""#input_one
-    f2=""#gans_output
+    f1="c____img_white_24"#input_one
+    f2="c____img_white_24._output1"#gans_output
 
     img1 = Image.open(f1)
     l1 = np.array(img1)
