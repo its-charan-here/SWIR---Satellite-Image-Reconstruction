@@ -44,23 +44,23 @@ of each row and column of each band in imagery. A smaller number indicates low r
 
 	* Random bad pixels (shot noise). 
 	
-		![Random Bad Pixels Example][badpixerr]{:width="400px" height="400px"}
+		<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/badpixerr.jpg" height=300px>
 	
 	* Line-start/stop problems. 
 	
-		![Line Start/Stop Error Example][linestarterr]
+		<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/linestarterr.jpg" height=300px>
 	
 	* ***Line or column drop-outs.*** ²
 	
-		![Column Dropout Example][coldropouterr]
+		<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/coldropouterr.jpg" height=300px>
 	
 	* Partial line or column drop-outs.
 	
-		![Partial Column Dropout Example][partialdropouterr]
+		<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/partialdropouterr.jpg" height=300px>
 	
 	* Line or column striping.
 	
-		![Line Striping Example][stripingerr]
+		<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/stripingerr.jpg" height=300px>
 
 
 ² In order to have a fixed scope to facilitate easier understanding, we shall be constrained to Line & Column Dropouts only for Data Reconstruction.
@@ -103,7 +103,7 @@ The proposed technique we plan to implement aims to utilise the newly unveiled p
 [mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png
 [sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.png
 
-[badpixerr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/badpixerr.jpg&s=200
+[badpixerr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/badpixerr.jpg
 [coldropouterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/coldropouterr.jpg
 [linestarterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/linestarterr.jpg
 [partialdropouterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/partialdropouterr.jpg
