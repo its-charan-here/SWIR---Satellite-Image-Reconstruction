@@ -16,9 +16,9 @@ var fs = require("fs");
 
 // console.log(path.extname('index.html'));
 
-let {PythonShell} = require('python-shell');
+let {PythonShell} = require('python-shell');//package to connect with python programs
 
-const spawn = require('child_process').spawn;
+const spawn = require('child_process').spawn;//package to connect with python programs
 
 var bodyparser=require("body-parser");
 
