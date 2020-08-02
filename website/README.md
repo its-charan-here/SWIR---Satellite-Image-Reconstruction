@@ -7,26 +7,48 @@
 
 ## Smart India Hackathon 2020
 
-# Website
 
-The Website is a Gateway to our *Project* which makes it User Friendly and Easy to use
+# WEBSITE
 
+ **NodeJS Web Application integrated with python** 
 
-Fonts:consists of all the fonts necessary for the website
+### Home page
+- Guide about our project
+- Input and Output Samples 
+- Try it yourself
+- About the team
 
-Js:contains all the bootstrap files
+### Upload Page
+Upload an tif/jpg/png images
+- Select the preferred process for reconstruction of images
+- Download the output image in the preferred extension
 
-app.js: contains our nodeJS server for the website
-
-Node\_modules:consists of all npm packages
-
-Python files mentioned for our project in the directory
-
-Install project dependencies
+Install project dependencies:
 ```
 npm install
-
+ 
 ```
-
+ 
 ### Instructions
 - Syntax : `node app.js`
+
+
+## Built with
+## Front-end
+- ejs
+- Bootstrap
+- Font Awesome
+- Google fonts
+ 
+## Back-end
+- express
+- path
+- multer
+- fs
+- python-shell
+- child-process
+- body-parser
+ 
+## Platforms
+localhost:3000
+
