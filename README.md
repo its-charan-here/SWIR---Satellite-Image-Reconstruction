@@ -8,6 +8,11 @@
 
 ## Smart India Hackathon 2020
 
+# Sample Output
+
+- https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/tree/master/final_output
+
+
 ### Satellite Imagery
 
 - Satellite imagery depicts the Earth’s surface at various spectral, temporal, radiometric, and increasingly detailed spatial resolutions, as is determined by each collection system’s sensing device, and the orbital path of its reconnaissance platform.
@@ -149,11 +154,6 @@ array([[4, 4, 4, ..., 5, 5, 4],
 
 - Since the Luminosity of the Pixels was a relative factor, which can be deduced by the interconvertibility of 16-bit to 8-bit data,we incorporated a relativity factor in our program which would convert the images to 8-bit properly.
 
-
-
-# Sample Output
-
-- https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/tree/master/final_output
 
 ```
 >>> matrix16 = n                                                                                
