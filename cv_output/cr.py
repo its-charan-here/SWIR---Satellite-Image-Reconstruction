@@ -36,7 +36,7 @@ def correrct(l,mask,mode=0):
     k = np.where(mask==255)
     l=l1
     l[k]=(inpaint_arr[k]+l2[k])//2
-    imsave("final_output.tiff",l)
+    imsave('final_output.tif',l)
 
 
 stop = timeit.default_timer()
