@@ -19,9 +19,18 @@
 
 	* *VISIBLE IMAGERY* : Visible images represent the amount of sunlight being scattered back into space by the clouds, aerosols, atmospheric gases, and the Earth's surface.
 
-	* ***INFRARED IMAGERY : IR or infrared satellite imagery is sort of a temperature map. The weather satellite detects heat energy in the infrared spectrum (infrared energy is invisible to the human eye). Since temperature, in general, decreases with increasing height, high altitudes will appear whiter than low altitudes.***
+	* ***INFRARED IMAGERY¹ : IR or infrared satellite imagery is sort of a temperature map. The weather satellite detects heat energy in the infrared spectrum (infrared energy is invisible to the human eye). Since temperature, in general, decreases with increasing height, high altitudes will appear whiter than low altitudes.***
 	
 	* *WATER VAPOUR IMAGERY* : Water vapor satellite pictures indicate how much moisture is present in the upper atmosphere (approximately from 15,000 ft to 30,000 ft). The highest humidities will be the whitest areas while dry regions will be dark. Water vapor imagery is useful for indicating where heavy rain is possible.
+	
+¹ For the sake of efficiency, we shall constrain our analysis to INFRARED IMAGERY only, in particular, Short Wave Infrared Imagery or SWIR.
+
+### Short Wave Infrared Images (SWIR)
+
+- SWIR refers to non-visible light falling roughly between 1400 and 3000 nanometers (nm) in wavelength. Visible light, on the other hand, typically corresponds to the 400 to 700 nm range. Immediately adjacent to visible light is near infrared, or NIR, within the 700 to 1400 nm range, and SWIR is adjacent to NIR.
+
+- Collecting satellite imagery in SWIR wavelengths has unique benefits, including improved atmospheric transparency and material identification. Because of their chemistries, many materials have specific reflectance and absorption features in the SWIR bands that allow for their characterization from space.
+
 
 ### Instructions for dropouts_mask.py : 
 
