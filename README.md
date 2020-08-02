@@ -1,3 +1,4 @@
+
 <a href="https://mitwpu.edu.in">![MIT WPU Logo][mitlogo]</a>
 <a href="https://www.sih.gov.in/">![SIH Logo][sihlogo]</a>
 
@@ -63,8 +64,20 @@ of each row and column of each band in imagery. A smaller number indicates low r
 		![Line Striping Example][stripingerr]
 
 
-² In order to have a fixed scope to facilitate easier understanding, we shall be constrained to Line & Column Dropouts only for Data Reconstruction
+² In order to have a fixed scope to facilitate easier understanding, we shall be constrained to Line & Column Dropouts only for Data Reconstruction.
 
+## Citing
+```
+@article{yu2018free,
+  title={Free-Form Image Inpainting with Gated Convolution},
+  author={Yu, Jiahui and Lin, Zhe and Yang, Jimei and Shen, Xiaohui and Lu, Xin and Huang, Thomas S},
+  journal={arXiv preprint arXiv:1806.03589},
+  year={2018}
+}
+```
+## TensorBoard
+
+Visualization on [TensorBoard](https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard) for training and validation is supported. Run `tensorboard --logdir model_logs --port 6006` to view training progress.
 
 ### Instructions for dropouts_mask.py : 
 
