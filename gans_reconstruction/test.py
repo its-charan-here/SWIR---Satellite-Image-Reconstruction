@@ -92,6 +92,7 @@ if __name__ == "__main__":
 
     h, w, _ = image.shape
     grid = 8
+    image1 = image1[:h//grid*grid, :w//grid*grid] 
     image = image[:h//grid*grid, :w//grid*grid,:]
     mask = mask[:h//grid*grid, :w//grid*grid,:]
     print('Shape of image: {}'.format(image.shape))
