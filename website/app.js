@@ -134,9 +134,9 @@ app.get('/run', function (req, res) {
     subprocess.stderr.pipe(res)
   });
 
-app.get("/upload",function(req,res){
+app.get("/upload",function(req,res){//get request for /upload
   var flag=0;
-res.render("upload",{flag:flag});
+res.render("upload",{flag:flag});//calls upload file for user to submit image
 });
 
 app.post("/upload",function(req,res){
