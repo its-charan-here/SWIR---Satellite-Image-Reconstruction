@@ -52,6 +52,16 @@ of each row and column of each band in imagery. A smaller number indicates low r
 
 ² In order to have a fixed scope to facilitate easier understanding, we shall be constrained to Line & Column Dropouts only for Data Reconstruction
 
+## Citing
+```
+@article{yu2018free,
+  title={Free-Form Image Inpainting with Gated Convolution},
+  author={Yu, Jiahui and Lin, Zhe and Yang, Jimei and Shen, Xiaohui and Lu, Xin and Huang, Thomas S},
+  journal={arXiv preprint arXiv:1806.03589},
+  year={2018}
+}
+```
+
 
 ### Instructions for dropouts_mask.py : 
 
