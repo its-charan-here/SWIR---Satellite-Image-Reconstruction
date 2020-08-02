@@ -50,18 +50,18 @@ app.post('/uploadFile', upload.single('file'), function(req,res) {//post request
   //   res.send(file)
   // document.getElementById("sub").style.display="none"; 
   var flag;
-  var file=req.file;
-   names=file.originalname;
+  var file=req.file;//gets the file details
+   names=file.originalname;//stores original name of file
   console.log(names);
-  const tempPath = req.file.path;
-  ex=path.extname(file.originalname);
-  if (ex===".tif"){
-    const targetPath = path.join(__dirname, "./uploads/image.tif");
+  const tempPath = req.file.path;//stores file path
+  ex=path.extname(file.originalname);//finds extension of image
+  if (ex===".tif"){//checks for tif type image
+    const targetPath = path.join(__dirname, "./uploads/image.tif");//stores image as image.tif in uploads folder
     fs.rename(tempPath, targetPath, err => {
       if (err) return handleError(err, res);});
       flag=4;
       console.log("Calling python fucntion");
-      const process = spawn('python', ['tif_to_jpg.py']);
+      const process = spawn('python', ['tif_to_jpg.py']);//call to python function to convert tif image to jpg for displaying purpose
           process.stdout.on('data', (data) => {
           console.log(data.toString());
           res.render("upload",{flag:flag,names:names});
