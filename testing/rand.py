@@ -6,6 +6,7 @@ import tifffile as tif
 import timeit
 start = timeit.default_timer() 
 import os
+
 def array_to_jpg_image(f):
     l=(f*(255/4095))//1
     gray=np.uint8(l)
@@ -13,8 +14,8 @@ def array_to_jpg_image(f):
     return im
 
 def f_up(fol):
-    t=random.randrange(2,270);
-    w=random.randrange(1,6);
+    t=random.randrange(2,270)
+    w=random.randrange(1,4)
     fol[:,t:t+w]=0
     return l
 dt =np.dtype(np.uint16)
@@ -24,7 +25,6 @@ for _ in f:
     l = np.array(img,dtype=dt)
     #print(l.dtype,img.dtype)
 
-    l=f_up(l)
     l=f_up(l)
     while random.randrange(1,9)>=7:
         l=f_up(l)
