@@ -45,7 +45,7 @@ of each row and column of each band in imagery. A smaller number indicates low r
 
 	* Random bad pixels (shot noise). 
 	
-		![Random Bad Pixels Example][badpixerr]
+		![Random Bad Pixels Example][badpixerr]{:width="400px" height="400px"}
 	
 	* Line-start/stop problems. 
 	
@@ -104,7 +104,7 @@ The proposed technique we plan to implement aims to utilise the newly unveiled p
 [mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/MIT.png
 [sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png
 
-[badpixerr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/badpixerr.jpg
+[badpixerr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/badpixerr.jpg&s=200
 [coldropouterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/coldropouterr.jpg
 [linestarterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/linestarterr.jpg
 [partialdropouterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/partialdropouterr.jpg
