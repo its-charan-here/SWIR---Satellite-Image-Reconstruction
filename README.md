@@ -51,7 +51,7 @@ of each row and column of each band in imagery. A smaller number indicates low r
 	
 		![Line Start/Stop Error Example][linestarterr]
 	
-	* ***Line or column drop-outs.***²
+	* ***Line or column drop-outs.*** ²
 	
 		![Column Dropout Example][coldropouterr]
 	
