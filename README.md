@@ -101,8 +101,8 @@ The proposed technique we plan to implement aims to utilise the newly unveiled p
 - Syntax : `python dropouts_mask.py (input_file) [OPTIONAL = output_extension png|tiff|tif]`
 
 
-[mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/MIT.png
-[sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png
+[mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png
+[sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.jpeg
 
 [badpixerr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/badpixerr.jpg&s=200
 [coldropouterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/coldropouterr.jpg
