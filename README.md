@@ -122,7 +122,6 @@ array([[4, 4, 4, ..., 5, 5, 4],
 
 ## Developing a Neural Network for the Reconstruction
 
-
 ### Citations
 ```
 @article{yu2018free,
