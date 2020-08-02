@@ -34,13 +34,13 @@ app.use(express.static(__dirname+"/uploads"));
 
 
 
-app.set("view engine","ejs");
+app.set("view engine","ejs");//direct access/call to ejs files
 
 app.get("/",function(req,res){
-    res.render("index");
+    res.render("index");//renders home page(index.ejs)
 });
-var names;
-app.post('/uploadFile', upload.single('file'), function(req,res) {
+var names;//Is created to store and pass the actual name of image uploaded
+app.post('/uploadFile', upload.single('file'), function(req,res) {//post request to submit image uploaded from device
   // const file = req.file
   // if (!file) {
   //   const error = new Error('Please upload a file')
