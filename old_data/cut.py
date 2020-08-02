@@ -4,7 +4,7 @@ import timeit
 from tifffile import imsave
 start = timeit.default_timer() 
 
-dt =np.dtype(np.int16)
+dt =np.dtype(np.uint16)
 l= np.fromfile('black.rl0', dtype=dt).reshape((8238,6000))
 for i in range(18):
     for j in range(25):
