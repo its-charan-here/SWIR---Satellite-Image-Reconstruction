@@ -44,15 +44,11 @@ of each row and column of each band in imagery. A smaller number indicates low r
 
 	* Random bad pixels (shot noise). 
 	
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
 	* Line-start/stop problems. 
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
 	* ***Line or column drop-outs.***²
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
 	* Partial line or column drop-outs.
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
 	* Line or column striping.
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	
 
 ² In order to have a fixed scope to facilitate easier understanding, we shall be constrained to Line & Column Dropouts only for Data Reconstruction
 
