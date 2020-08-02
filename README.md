@@ -122,6 +122,18 @@ array([[4, 4, 4, ..., 5, 5, 4],
 
 ## Developing a Neural Network for the Reconstruction
 
+- With the ability of sharing and Referencing pre-existing Neural Networks and Deep Learning Reconstruction Solutions out of scope, we went back to the roots of Machine Learning and Image Processing.
+
+- In order to implement the research done by many Enthusiasts over the years for our solution, we started by implementing the solution they provided and stripping it down to form a peocessinf algorithm for matrices od pixel values.
+
+- Once we had the barebones of our algorithm ready, we rigorously trained it with openly available datasets and the Given data.
+
+- After ensuring that we had generated enough epochs and weights to properly process 8-bit data, ***we rebased the program to test 16-bit data.***
+
+- After Various Modifications to every layer of the Neural Network, we had a model that could now train on 16-bit Satellite Imagery.
+
+- Using openly available LANDSAT data, and Datasets from Caggle combined with other sources, we **trained our model with 16-bit SWIR TIFF Images.**
+
 ### Citations
 ```
 @article{yu2018free,
