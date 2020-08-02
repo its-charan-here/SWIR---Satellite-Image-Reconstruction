@@ -102,7 +102,7 @@ The proposed technique we plan to implement aims to utilise the newly unveiled p
 
 
 [mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png
-[sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.jpeg
+[sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.png
 
 [badpixerr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/badpixerr.jpg&s=200
 [coldropouterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/coldropouterr.jpg
