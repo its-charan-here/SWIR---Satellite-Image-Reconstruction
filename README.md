@@ -131,7 +131,7 @@ array([[4, 4, 4, ..., 5, 5, 4],
 
 - After Various Modifications to every layer of the Neural Network, we had a model that could now train on 16-bit Satellite Imagery.
 
-- Using openly available LANDSAT data, and Datasets from Caggle combined with other sources, we **trained our model with 16-bit SWIR TIFF Images.**
+- Using openly available LANDSAT data, and Datasets from Kaggle combined with other sources, we **trained our model with 16-bit SWIR TIFF Images.**
 
 ### Citations
 ```
