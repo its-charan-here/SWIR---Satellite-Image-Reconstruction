@@ -83,6 +83,37 @@ Traditional methods of rectifying the errors in question are listed as follows :
 #### New Technique
 The proposed technique we plan to implement aims to utilise the newly unveiled power of Machine Learning and Artificial Intelligence to provide Optimum, Efficient and Accurate rectification methods by reconstructing the missing data using Neural Networks.
 
+# Realisation & Implementation of Proposed Solution
+
+## Parsing Satellite Imagery
+
+- The first challenge faced by our team was reading the satellite Raster Data and converting it into a Programmatically Modifiable format in order for our Neural Network to be able to Reconstruct the Missing Data.
+
+- In order to accommodate this our first solution was to read the binary data from the raw Raster via native python methods and to convert it into a Numpy Matrix with pixel values indicating the Luminosity of each pixel. Which gave rise to the problem of having unsigned 16 bit integers as the datatype for the image.
+
+- Having 16-bit Images made it difficult for openly Available solutions to be able to read the data, hence we came up.with a conversion process to convert the data to unsigned 8 bit integers.
+
+			```
+			>>> matrix16
+			array([[1265, 1245, 1274, ..., 1286, 1291, 1220],
+			       [1297, 1282, 1272, ..., 1265, 1293, 1240],
+			       [1306, 1302, 1327, ..., 1254, 1311, 1269],
+			       ...,
+			       [1181, 1146, 1169, ..., 1274, 1277, 1240],
+			       [1251, 1189, 1203, ..., 1314, 1271, 1228],
+			       [1303, 1205, 1198, ..., 1223, 1209, 1171]], dtype=uint16)
+			>>> matrix8 = matrix16//256
+			>>> matrix8 = matrix8.astype(np.uint8)
+			>>> matrix8
+			array([[4, 4, 4, ..., 5, 5, 4],
+			       [5, 5, 4, ..., 4, 5, 4],
+			       [5, 5, 5, ..., 4, 5, 4],
+			       ...,
+			       [4, 4, 4, ..., 4, 4, 4],
+			       [4, 4, 4, ..., 5, 4, 4],
+			       [5, 4, 4, ..., 4, 4, 4]], dtype=uint8)
+			```
+
 
 ### Citations
 ```
