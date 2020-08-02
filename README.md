@@ -136,7 +136,7 @@ array([[4, 4, 4, ..., 5, 5, 4],
 
 - After Various Modifications to every layer of the Neural Network, we had a model that could now train on 16-bit Satellite Imagery.
 
-- Using openly available LANDSAT data, and Datasets from Caggle combined with other sources, we **trained our model with 16-bit SWIR TIFF Images.**
+- Using openly available LANDSAT data, and Datasets from Kaggle combined with other sources, we **trained our model with 16-bit SWIR TIFF Images.**
 
 ## Creating a Mask for Reconstruction
 
@@ -196,7 +196,7 @@ array([[209, 206, 210, ..., 212, 213, 201],
 
 - ***Thus, we divided the images into sections or layers and differentiated each layer using the mask developed earlier, once we had identified which sections needed reconstruction, we would supply those to the GANS algorithm which would generate the reconstructed image of the partial data we provided to it.***
 
-- ***Once we had the Reconstructed Image, we would patch together all the different sections from the Original Inage and the Output produced by GANS over the partial data and generate our final output file.***
+- ***Once we had the Reconstructed Image, we would patch together all the different sections from the Original Image and the Output produced by GANS over the partial data and generate our final output file.***
 
 - Thus Accomplishing ***Lossless 16-bit Input and 16-bit Output.***
 
