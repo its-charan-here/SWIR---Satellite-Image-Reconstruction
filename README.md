@@ -31,6 +31,30 @@
 
 - Collecting satellite imagery in SWIR wavelengths has unique benefits, including improved atmospheric transparency and material identification. Because of their chemistries, many materials have specific reflectance and absorption features in the SWIR bands that allow for their characterization from space.
 
+### Errors in SWIR
+
+- A digital remotely sensed image is typically composed of picture elements (pixels) having Digital Number (DN) or Brightness Value (BV) located at the intersection 
+of each row and column of each band in imagery. A smaller number indicates low radiance from the area and high number is an indicator of high radiant properties of the area. Raw digital images usually contain distortions or various types of error so they cannot be used directly without proper processing. Sources of these distortions range from variation in the altitude and velocity of the sensor to Earth's rotation and curvature etc. Corrections are thus necessary for such satellite images. Programs to rectify Satellite imagery aim to correct distorted or degraded image data to create a reliable representation of the original scene.
+
+- Broadly Categorised, there are two types of errors, Radiometric and Geometric Errors, for the scope of the project we shall be limited to Radiometric Errors involving missing data.
+
+- Radiometric Errors are caused by inconsistencies in the capturing sensor and atmospheric conditions which lead to incorrect or no brightness values being recorded.
+
+- Such errors include : 
+
+	* Random bad pixels (shot noise). 
+	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	* Line-start/stop problems. 
+	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	* ***Line or column drop-outs.***²
+	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	* Partial line or column drop-outs.
+	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	* Line or column striping.
+	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+
+² In order to have a fixed scope to facilitate easier understanding, we shall be constrained to Line & Column Dropouts only for Data Reconstruction
+
 
 ### Instructions for dropouts_mask.py : 
 
