@@ -64,12 +64,12 @@ app.post('/uploadFile', upload.single('file'), function(req,res) {//post request
       const process = spawn('python', ['tif_to_jpg.py']);//call to python function to convert tif image to jpg for displaying purpose
           process.stdout.on('data', (data) => {
           console.log(data.toString());
-          res.render("upload",{flag:flag,names:names});
+          res.render("upload",{flag:flag,names:names});//render the upload.ejs method to proceed further
       });
       
   }
   else{
-    const targetPath = path.join(__dirname, "./uploads/image.jpg");
+    const targetPath = path.join(__dirname, "./uploads/image.jpg");//uploads jpg image in uploads folder
     fs.rename(tempPath, targetPath, err => {
       if (err) return handleError(err, res);
 
@@ -77,8 +77,8 @@ app.post('/uploadFile', upload.single('file'), function(req,res) {//post request
        flag=2;
   const file=req.file;
   ex=path.extname(file.originalname);
-  if (ex===".rl0"){
-    res.render("popup");
+  if (ex===".rl0"){//checks for rl0 file
+    res.render("popup");//calls popup.ejs
     
     console.log(flag);
   }
