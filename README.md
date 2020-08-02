@@ -66,7 +66,26 @@ of each row and column of each band in imagery. A smaller number indicates low r
 
 ² In order to have a fixed scope to facilitate easier understanding, we shall be constrained to Line & Column Dropouts only for Data Reconstruction.
 
-## Citing
+
+### Reconstruction
+
+- The process of building or forming (something) again after it has been damaged or destroyed is known as reconstruction, in this case we shall refer to reconstructing the missing data in Satellite Images caused by Radiometric Errors.
+
+
+## Proposed Solution
+
+#### Traditional methods
+Traditional methods of rectifying the errors in question are listed as follows : 
+
+	* Replacement by others Pixels in Vicinity :  the brightness value of the missing pixels is replaced by the value of the pixel on immediately preceding or succeeding line.
+	* Replacement by Averaging : the brightness value of the missing pixels is calculated by taking the mean of the pixels in its proximity.
+	* In essence, simple mathematical operations are used in order to estimate the missing data in terms of numerical values.
+
+#### New Technique
+The proposed technique we plan to implement aims to utilise the newly unveiled power of Machine Learning and Artificial Intelligence to provide Optimum, Efficient and Accurate rectification methods by reconstructing the missing data using Neural Networks.
+
+
+### Citations
 ```
 @article{yu2018free,
   title={Free-Form Image Inpainting with Gated Convolution},
