@@ -32,3 +32,20 @@ diff = (diff * 255).astype("uint8")
 
 # 6. You can print only the score if you want
 print("SSIM: {}".format(score))
+'''
+Horizontal ->
+SSIM: 0.9963796631946563    
+
+Vertical ->
+SSIM: 0.9997791623683393
+'''
+
+
+'''
+Before 
+Original and Given Horizontal -> SSIM: 0.9314753871768957
+
+Original and Given Vertical -> SSIM: 0.924211982656181
+
+'''
+
