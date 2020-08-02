@@ -12,77 +12,62 @@ from tifffile import imsave
 import warnings
 
 
-from inpaint_model import InpaintCAModel
+from reconstruction_model import GAN_Reconstruction
 
 warnings.filterwarnings("ignore")
 
 
 print("python function called")
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--image', default='', type=str,
                     help='The filename of image to be completed.')
-parser.add_argument('--mask', default='', type=str,
-                    help='The filename of mask, value 255 indicates mask.')
-parser.add_argument('--output', default='test_output/output.png', type=str,
+parser.add_argument('--output', default='test_output/output.tif', type=str,
                     help='Where to write output.')
-parser.add_argument('--checkpoint_dir', default='logs/model_dir_61', type=str,
+parser.add_argument('--checkpoint_dir', default='logs/model_weights', type=str,
                     help='The directory of tensorflow checkpoint.')
 
+args, unknown = parser.parse_known_args()
 
 
-path_img =r"E:\sih\generative_inpainting\testing_only\c____img_1_31.tif"
-# path_img = "examples/try1.jpg"
+path_img = args.image
 
-output_path =path_img[:-4] +"_output_GI.tif" 
+output_path = args.output
+
+
 print("Gonna Start")
-print(path_img) 
-print(type(path_img))
+# print(path_img) 
+# print(type(path_img))
 
 def array_to_jpg_image(f):
     l=(f*(255/4095))//1
     gray=np.uint8(l)
-    # im = Image.fromarray(gray)
     return gray
 
-# path_mask = "mask_try1.jpg"
+def mask_t(l,flag,t):
+    d=l.shape
+    k= np.zeros(d,dtype=np.uint8)
+    if flag == 0:  
+        temp=np.where(l<=t)
+        k[temp]=255                                                
+    elif flag == 1:        
+        temp=np.where(l>=t)
+        k[temp]=255
+    return k
 
 if __name__ == "__main__":
-    FLAGS = ng.Config('inpaint.yml')
+    FLAGS = ng.Config('sat_reconstruction.yml')
     print("hey")
     # ng.get_gpus(1)
-    args, unknown = parser.parse_known_args()
 
-    model = InpaintCAModel()
-
-    # image = cv2.imread(path_img)
+    model = GAN_Reconstruction()
 
     image = tiff.imread(path_img)
+    image1 = image
     ratio = np.amax(image)/256
     stacked_img = np.stack((image/ratio,)*3,axis=-1)
     image =stacked_img[:,:,:]
-
-    cv2.imwrite("test_input/input.tif",image)
-    
-    
-    # print(image)
-    # # temp_image = array_to_jpg_image(image)
-    # # print(temp_image)
-    
-    # print("main")
-    # # img = cv2.cvtColor(temp_image, cv2.COLOR_BGR2GRAY)
-    # # img = cv2.cvtColor(temp_image,cv2.COLOR_GRAY2BGR)
-    # ret, thresh1 = cv2.threshold(image, 130, 255, cv2.THRESH_BINARY)
-
-
-    # img = thresh1
-    # kernel = np.ones((3,3),np.uint8)
-    # dilation = cv2.dilate(img,kernel,iterations = 2)
-
-    # print("Increased mask")
-    # ret, thresh2 = cv2.threshold(dilation, 130, 255, cv2.THRESH_BINARY)
-
-
-    # cv2.imwrite("test_output/mask.JPG",thresh2)
 
     im_array = image
     horizontal = np.where(~im_array.any(axis = 1))[0].tolist()
@@ -90,21 +75,17 @@ if __name__ == "__main__":
 
     mask = np.zeros(shape = im_array.shape, dtype = im_array.dtype)
 
-    print(im_array.dtype)
+    # print(im_array.dtype)
 
     for x in horizontal:
         mask[x, :] = 65535
 
     for y in vertical:
         mask[:, y] = 65535
-        
 
-
-    cv2.imwrite("test_output/mask.JPG",mask)
-    print(mask)
-
-    print(image.shape)
-    print(mask.shape)
+    # print(mask)
+    # print(image.shape)
+    # print(mask.shape)
     # mask = cv2.resize(mask, (0,0), fx=0.5, fy=0.5)
 
     assert image.shape == mask.shape
@@ -144,10 +125,18 @@ if __name__ == "__main__":
         final_array = result[0][:, :, ::-1]*ratio//1
         final_array = final_array[:,:,1]
         final_array = final_array.astype(np.uint16)
-        print(final_array.shape)
-        print(final_array.dtype)
-        # cv2.imwrite(output_path, result[0][:, :, ::-1]*ratio)
-        imsave(output_path,final_array)
+        # print(final_array.shape)
+        # print(final_array.dtype)
+        
+        l = []
+        l1 = image1
+        l2 = final_array
+        mask=mask_t(l1,0,300)
+        k = np.where(mask==255)
+        l=l1
+        l[k]=(l2[k])
+            
+        imsave(output_path,l)
 
 
         print("\n\n\nOUTPUT GENERATED\n\n\n")

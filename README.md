@@ -8,6 +8,11 @@
 
 ## Smart India Hackathon 2020
 
+# Sample Output
+
+- https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/tree/master/final_output
+
+
 ### Satellite Imagery
 
 - Satellite imagery depicts the Earth’s surface at various spectral, temporal, radiometric, and increasingly detailed spatial resolutions, as is determined by each collection system’s sensing device, and the orbital path of its reconnaissance platform.
@@ -115,7 +120,7 @@ array([[4, 4, 4, ..., 5, 5, 4],
 
 - This caused a reduction in data thus making our solution less reliable and preferable at its job. Creating a new challenge for us.
 
-- ***In order to have a reliable and efficient solution, we reverted back to binary parsing and kept the data to its Predefined 16 bit format and Started working on a neural network which would be able to process this 16 bit data.***
+- ***In order to have a reliable and efficient solution, we reverted to binary parsing and kept the data to its Predefined 16 bit format and Started working on a neural network which would be able to process this 16 bit data.***
 
 - ***This eliminated the option for us to borrow and reference code from other commercial and free solutions being used to reconstruct day to day images as they supported only 8 bit data.***
 
@@ -132,6 +137,68 @@ array([[4, 4, 4, ..., 5, 5, 4],
 - After Various Modifications to every layer of the Neural Network, we had a model that could now train on 16-bit Satellite Imagery.
 
 - Using openly available LANDSAT data, and Datasets from Kaggle combined with other sources, we **trained our model with 16-bit SWIR TIFF Images.**
+
+## Creating a Mask for Reconstruction
+
+- After importing the given 16-bit image as a Numpy Matrix, it was only a matter of time and basic programming to create an iterating algorithm that identifies dropped out pixels by a thresholding system.
+
+- This algorithm worked well, except in images with actual black regions and for large data, this algorithm was inefficient and rather slow due to the number of iterations.
+
+- Thus, we redesigned this algorithm to incorporate a ***content aware system that could identify line and column dropouts*** instead of iterating over the whole image. This improved our benchmark time and computing efficiency.
+
+## Reconstruction of Missing Data with said Program
+
+- Since we did not have a 16-bit Image Processing Progam ready, we tried to work around the problem and incorporate a downscaling factor which would convert the 16-bit input to 8-bit.
+
+- While creating this downscaling factor, we noticed that the algorithm did not work correctly and we lost all data. Upon brainstorming we came up with a solution to this.
+
+- Since the Luminosity of the Pixels was a relative factor, which can be deduced by the interconvertibility of 16-bit to 8-bit data,we incorporated a relativity factor in our program which would convert the images to 8-bit properly.
+
+
+```
+>>> matrix16 = n                                                                                
+>>> matrix16                                                                                    
+array([[1265, 1245, 1274, ..., 1286, 1291, 1220],                                              
+       [1297, 1282, 1272, ..., 1265, 1293, 1240],                                        
+       [1306, 1302, 1327, ..., 1254, 1311, 1269],           
+       ...,                                                                                   
+       [1181, 1146, 1169, ..., 1274, 1277, 1240],                                   
+       [1251, 1189, 1203, ..., 1314, 1271, 1228],                                           
+       [1303, 1205, 1198, ..., 1223, 1209, 1171]], dtype=uint16)                                
+>>> relativity_factor = np.amax(matrix16)/256                                                   
+>>> relativity_factor                                                                           
+6.04296875                                                                                      
+>>> matrix8 = (matrix16//relativity_factor).astype(np.uint8)                                    
+>>> matrix8                                                                                     
+array([[209, 206, 210, ..., 212, 213, 201],                                               
+       [214, 212, 210, ..., 209, 213, 205],                                                
+       [216, 215, 219, ..., 207, 216, 209],                                          
+       ...,              
+       [195, 189, 193, ..., 210, 211, 205],                                              
+       [207, 196, 199, ..., 217, 210, 203],                                                  
+       [215, 199, 198, ..., 202, 200, 193]], dtype=uint8)
+```
+
+- Once converted to 8-bit, we could run it through our Algorithm and Reconstruct the data and Upscale it to 16-bit by the relative factor calculated earlier.
+
+```
+>>> matrix8
+array([[209, 206, 210, ..., 212, 213, 201],       
+       ...,                                                    
+       [207, 196, 199, ..., 217, 210, 203],                           
+>>> output16 = matrix8 * relativity_factor // 1                  
+       [1293., 1281., 1269., ..., 1262., 1287., 1238.],                  
+       [1178., 1142., 1166., ..., 1269., 1275., 1238.],                  
+```
+- Since we discovered that this was a lossy means of conversion, ***we discarded this whole Program and started afresh with more experience and knowledge.***
+
+- After training the Neural Network on 16-bit Images, in order to have an efficient and quick algorithm, ***we decided to furnish the program with only the necessary data in order for reconstruction, the rest of the image would stay as it is.***
+
+- ***Thus, we divided the images into sections or layers and differentiated each layer using the mask developed earlier, once we had identified which sections needed reconstruction, we would supply those to the GANS algorithm which would generate the reconstructed image of the partial data we provided to it.***
+
+- ***Once we had the Reconstructed Image, we would patch together all the different sections from the Original Inage and the Output produced by GANS over the partial data and generate our final output file.***
+
+- Thus Accomplishing ***Lossless 16-bit Input and 16-bit Output.***
 
 ### Citations
 ```
