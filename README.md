@@ -61,6 +61,9 @@ of each row and column of each band in imagery. A smaller number indicates low r
   year={2018}
 }
 ```
+## TensorBoard
+
+Visualization on [TensorBoard](https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard) for training and validation is supported. Run `tensorboard --logdir model_logs --port 6006` to view training progress.
 
 
 ### Instructions for dropouts_mask.py : 
