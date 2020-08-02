@@ -1,5 +1,5 @@
-<a href="https://mitwpu.edu.in"><IMG src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/MIT.png"></a>
-<a href="https://www.sih.gov.in/"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png"></a>
+<a href="https://mitwpu.edu.in">![MIT WPU Logo][mitlogo]</a>
+<a href="https://www.sih.gov.in/">![SIH Logo][sihlogo]</a>
 
 # Project Aletheia
 
@@ -43,6 +43,7 @@ of each row and column of each band in imagery. A smaller number indicates low r
 - Such errors include : 
 
 	* Random bad pixels (shot noise). 
+	
 	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
 	* Line-start/stop problems. 
 	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
@@ -59,3 +60,7 @@ of each row and column of each band in imagery. A smaller number indicates low r
 ### Instructions for dropouts_mask.py : 
 
 - Syntax : `python dropouts_mask.py (input_file) [OPTIONAL = output_extension png|tiff|tif]`
+
+
+[mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/MIT.png
+[sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png
