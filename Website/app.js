@@ -1,3 +1,11 @@
+// Entry point of the website
+// The nodeJS file that will get our server started 
+//Website will operate on localhost:3000
+//flag==1 means that the generative inpainting method was selected
+//flag==2 means that jpg or png image is uploaded
+//flag==3 means that the OpenCV method was selected
+//flag==4 means that tif image is uploaded 
+
 var express=require("express");
 var app=express();
 var path = require('path');
