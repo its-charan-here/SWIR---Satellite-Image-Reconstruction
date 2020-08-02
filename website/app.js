@@ -154,16 +154,16 @@ app.post("/upload",function(req,res){
 
   
 });
-app.post("/upload1",function(req,res){
+app.post("/upload1",function(req,res){//post request for generative inpainting
 
   var flag=1;
   
   console.log("Calling python fucntion");
-    const process = spawn('python', ['generative_inpainting/test.py']);
+    const process = spawn('python', ['generative_inpainting/test.py']);//calls the generative inpainting python file
   
     process.stdout.on('data', (data) => {
         console.log(data.toString());
-        res.render("upload",{flag:flag,names:names}); 
+        res.render("upload",{flag:flag,names:names}); //calls upload.ejs
    
     });
 
@@ -174,7 +174,7 @@ app.post("/upload1",function(req,res){
       });
         });
 
-  app.post("/upload2",function(req,res){
+  app.post("/upload2",function(req,res){//post request for openCV
     var flag =3;
     console.log("button2 was pressed");
     console.log("Calling python fucntion");
