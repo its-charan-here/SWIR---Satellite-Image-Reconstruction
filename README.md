@@ -44,15 +44,24 @@ of each row and column of each band in imagery. A smaller number indicates low r
 
 	* Random bad pixels (shot noise). 
 	
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+		![Random Bad Pixels Example][badpixerr]
+	
 	* Line-start/stop problems. 
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	
+		![Line Start/Stop Error Example][linestarterr]
+	
 	* ***Line or column drop-outs.***²
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	
+		![Column Dropout Example][coldropouterr]
+	
 	* Partial line or column drop-outs.
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	
+		![Partial Column Dropout Example][partialdropouterr]
+	
 	* Line or column striping.
-	<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png">
+	
+		![Line Striping Example][stripingerr]
+
 
 ² In order to have a fixed scope to facilitate easier understanding, we shall be constrained to Line & Column Dropouts only for Data Reconstruction
 
@@ -64,3 +73,9 @@ of each row and column of each band in imagery. A smaller number indicates low r
 
 [mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/MIT.png
 [sihlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/Website/public/images/sih.png
+
+[badpixerr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/badpixerr.jpg
+[coldropouterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/coldropouterr.jpg
+[linestarterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/linestarterr.jpg
+[partialdropouterr]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/partialdropouterr.jpg
+[stripingerr] : https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/stripingerr.jpg
