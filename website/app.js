@@ -84,7 +84,7 @@ app.post('/uploadFile', upload.single('file'), function(req,res) {//post request
   }
   
       
-     res.render("upload",{flag:flag,names:names});
+     res.render("upload",{flag:flag,names:names});//call the upload.ejs file
       
      
       //  res
@@ -96,11 +96,11 @@ app.post('/uploadFile', upload.single('file'), function(req,res) {//post request
   
 });
 
-app.post('/popup',function(req,res){
+app.post('/popup',function(req,res){//post request to get width and height by user
   var flag=2;
 console.log(req.body.width);
 console.log(req.body.height);
-res.render("upload",{flag:flag});
+res.render("upload",{flag:flag});//call upload.ejs
 });
 // var storage = multer.diskStorage({
 //   destination: function (req, file, cb) {
