@@ -1,7 +1,6 @@
+![Project Aletheia Symbol][aletheia]
 
-<a href="https://mitwpu.edu.in"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png" height=50px></a>		<a href="https://www.sih.gov.in/"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.png" height=50px></a>
-
-![Peoject Aletheia Symbol][aletheia]
+<a href="https://mitwpu.edu.in"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png" height=50px></a>								<a href="https://www.sih.gov.in/"><img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/sih.png" height=50px></a>
 
 ## NM391 The Ones n Zeros
 
