@@ -1,23 +1,31 @@
-var express=require("express");
+// Entry point of the website
+// The nodeJS file that will get our server started 
+//Website will operate on localhost:3000
+//flag==1 means that the generative inpainting method was selected
+//flag==2 means that jpg or png image is uploaded
+//flag==3 means that the OpenCV method was selected
+//flag==4 means that tif image is uploaded 
+
+var express=require("express");//package for web development framework
 var app=express();
-var path = require('path');
-var multer = require('multer');
+var path = require('path');//It provides a way of working with directories and file paths
+var multer = require('multer');//middleware to upload files
 var upload = multer({ dest: 'uploads/' });
 
 var fs = require("fs");
 
 // console.log(path.extname('index.html'));
 
-let {PythonShell} = require('python-shell');
+let {PythonShell} = require('python-shell');//package to connect with python programs
 
-const spawn = require('child_process').spawn;
+const spawn = require('child_process').spawn;//package to connect with python programs
 
-var bodyparser=require("body-parser");
+var bodyparser=require("body-parser");//package to get data from forms
 
 app.use(bodyparser.urlencoded({extended:true}));
 
 
-
+//The express package will explicity serve the following files
 app.use(express.static(__dirname+"/public"));
 app.use(express.static(__dirname+"/fonts"));
 app.use(express.static(__dirname+"/generative_inpainting"));
@@ -26,13 +34,13 @@ app.use(express.static(__dirname+"/uploads"));
 
 
 
-app.set("view engine","ejs");
+app.set("view engine","ejs");//direct access/call to ejs files
 
 app.get("/",function(req,res){
-    res.render("index");
+    res.render("index");//renders home page(index.ejs)
 });
-var names;
-app.post('/uploadFile', upload.single('file'), function(req,res) {
+var names;//Is created to store and pass the actual name of image uploaded
+app.post('/uploadFile', upload.single('file'), function(req,res) {//post request to submit image uploaded from device
   // const file = req.file
   // if (!file) {
   //   const error = new Error('Please upload a file')
@@ -42,26 +50,26 @@ app.post('/uploadFile', upload.single('file'), function(req,res) {
   //   res.send(file)
   // document.getElementById("sub").style.display="none"; 
   var flag;
-  var file=req.file;
-   names=file.originalname;
+  var file=req.file;//gets the file details
+   names=file.originalname;//stores original name of file
   console.log(names);
-  const tempPath = req.file.path;
-  ex=path.extname(file.originalname);
-  if (ex===".tif"){
-    const targetPath = path.join(__dirname, "./uploads/image.tif");
+  const tempPath = req.file.path;//stores file path
+  ex=path.extname(file.originalname);//finds extension of image
+  if (ex===".tif"){//checks for tif type image
+    const targetPath = path.join(__dirname, "./uploads/image.tif");//stores image as image.tif in uploads folder
     fs.rename(tempPath, targetPath, err => {
       if (err) return handleError(err, res);});
       flag=4;
       console.log("Calling python fucntion");
-      const process = spawn('python', ['tif_to_jpg.py']);
+      const process = spawn('python', ['tif_to_jpg.py']);//call to python function to convert tif image to jpg for displaying purpose
           process.stdout.on('data', (data) => {
           console.log(data.toString());
-          res.render("upload",{flag:flag,names:names});
+          res.render("upload",{flag:flag,names:names});//render the upload.ejs method to proceed further
       });
       
   }
   else{
-    const targetPath = path.join(__dirname, "./uploads/image.jpg");
+    const targetPath = path.join(__dirname, "./uploads/image.jpg");//uploads jpg image in uploads folder
     fs.rename(tempPath, targetPath, err => {
       if (err) return handleError(err, res);
 
@@ -69,14 +77,14 @@ app.post('/uploadFile', upload.single('file'), function(req,res) {
        flag=2;
   const file=req.file;
   ex=path.extname(file.originalname);
-  if (ex===".rl0"){
-    res.render("popup");
+  if (ex===".rl0"){//checks for rl0 file
+    res.render("popup");//calls popup.ejs
     
     console.log(flag);
   }
   
       
-     res.render("upload",{flag:flag,names:names});
+     res.render("upload",{flag:flag,names:names});//call the upload.ejs file
       
      
       //  res
@@ -88,11 +96,11 @@ app.post('/uploadFile', upload.single('file'), function(req,res) {
   
 });
 
-app.post('/popup',function(req,res){
+app.post('/popup',function(req,res){//post request to get width and height by user
   var flag=2;
 console.log(req.body.width);
 console.log(req.body.height);
-res.render("upload",{flag:flag});
+res.render("upload",{flag:flag});//call upload.ejs
 });
 // var storage = multer.diskStorage({
 //   destination: function (req, file, cb) {
@@ -126,9 +134,9 @@ app.get('/run', function (req, res) {
     subprocess.stderr.pipe(res)
   });
 
-app.get("/upload",function(req,res){
+app.get("/upload",function(req,res){//get request for /upload
   var flag=0;
-res.render("upload",{flag:flag});
+res.render("upload",{flag:flag});//calls upload file for user to submit image
 });
 
 app.post("/upload",function(req,res){
