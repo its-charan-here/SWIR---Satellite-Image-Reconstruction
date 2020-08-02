@@ -161,13 +161,13 @@ app.post("/upload1",function(req,res){//post request for generative inpainting
   console.log("Calling python fucntion");
     const process = spawn('python', ['generative_inpainting/test.py']);//calls the generative inpainting python file
   
-    process.stdout.on('data', (data) => {
+    process.stdout.on('data', (data) => {//collects data from python file
         console.log(data.toString());
         res.render("upload",{flag:flag,names:names}); //calls upload.ejs
    
     });
 
-    process.on('close', (code) => {
+    process.on('close', (code) => {//closes connection between node and python
       console.log(`child process close all stdio with code ${code}`);
       // send data to browser
       
@@ -179,11 +179,11 @@ app.post("/upload1",function(req,res){//post request for generative inpainting
     console.log("button2 was pressed");
     console.log("Calling python fucntion");
     // const process = spawn('python', ['opencv_inpaint.py']);
-    const process = spawn('python', ['cv_test.py']);
+    const process = spawn('python', ['cv_test.py']);//calls the openCV prog here
     
     process.stdout.on('data', (data) => {
         console.log(data.toString());
-         res.render("upload",{flag:flag,names:names});
+         res.render("upload",{flag:flag,names:names});//calls upload.ejs
     });
   
     process.on('close', (code) => {
