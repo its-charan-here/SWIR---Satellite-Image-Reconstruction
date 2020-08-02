@@ -34,7 +34,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-
+    <a href="#" class="navbar-left"><img id="logo" src="images/logo.PNG"></a>
     <a class="navbar-brand" href="/">The    ones    N    zeros</a>
 
   </div>
@@ -128,17 +128,17 @@
             <div class="col-12 col-sm-6 col-md-6">
               <form method="post" enctype="multipart/form-data" action="/uploadFile" >
                 <input   type="file" name="file" accept="image/*" class="custom-file-input btn btn-info btn-lg">
-                <input class="submit btn btn-info btn-lg"  type="submit" value="Submit Image"  onclick="shows()">
+                <input class="submit btn btn-info btn-lg"  type="submit" value="Submit Image"  onclick="shows()" style="margin-bottom: 5%;">
             </form>
             </div>
             <div class="col-12 col-sm-6 col-md-6" >
               <% if(flag===1){%>
              
                 <a href="test_output/output.png"  download="PNG Image" >
-                  <button class=" btn btn-info btn-lg" style="margin-left: 10%;">PNG Image</button>
+                  <button class=" btn btn-info btn-lg" style="margin-left: 10%;"><i class="fas fa-arrow-down"></i> PNG Image</button>
                 </a>
                 <a href="Images/OUTPUT/<%=download%>"  download="RAW Image" >
-                  <button class=" btn btn-info btn-lg">Raw Image</button>
+                  <button class=" btn btn-info btn-lg"><i class="fas fa-arrow-down"></i> Raw Image</button>
                 </a>
                
               <%}else if(flag===3){
@@ -152,10 +152,10 @@
               console.log("down="+download);
                 console.log(output);%>
                 <a href="cvoutput.jpg"  download="JPG Image" >
-                  <button class=" btn btn-info btn-lg" style="margin-left: 20%;">JPG Image</button>
+                  <button class=" btn btn-info btn-lg" style="margin-left: 20%;"><i class="fas fa-arrow-down"></i> JPG Image</button>
                 </a>
                 <a href="cvoutput.tif"  download="RAW IMAGE" >
-                  <button class=" btn btn-info btn-lg">TIF Image</button>
+                  <button class=" btn btn-info btn-lg"><i class="fas fa-arrow-down"></i> TIF Image</button>
                 </a>
                 
               <%}%>
