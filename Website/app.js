@@ -6,10 +6,10 @@
 //flag==3 means that the OpenCV method was selected
 //flag==4 means that tif image is uploaded 
 
-var express=require("express");
+var express=require("express");//package for web development framework
 var app=express();
-var path = require('path');
-var multer = require('multer');
+var path = require('path');//It provides a way of working with directories and file paths
+var multer = require('multer');//middleware to upload files
 var upload = multer({ dest: 'uploads/' });
 
 var fs = require("fs");
