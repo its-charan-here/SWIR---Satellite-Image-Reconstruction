@@ -1,0 +1,634 @@
+[33mcommit f74cf43fe1211c959f5d570b8368d96f269c5bdd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 16:20:37 2020 +0530
+
+    added Implementation of Proposed Solution
+
+[33mcommit 3389adab0a838f0751db41cdb7c182e251a3bf88[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 16:18:44 2020 +0530
+
+    README file for Website
+
+[33mcommit 419f8a462e717563f2a3a3bf1695dce961737706[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 16:13:53 2020 +0530
+
+    README file for Website
+
+[33mcommit dc067b93eefe697d017c33b380e2a43318543044[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 16:05:17 2020 +0530
+
+    README Images size optimised
+
+[33mcommit e6f19ae2e9488356886ed449d34833435966f448[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:56:42 2020 +0530
+
+    README aesthetics
+
+[33mcommit bdbab5a06b91842dc9e8bbf71700222d490a8967[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:54:07 2020 +0530
+
+    image sizes
+
+[33mcommit 9290ea96cf419b445b516d4ccd42701950fe0937[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:52:01 2020 +0530
+
+    image sizes
+
+[33mcommit 31eba907f91631b58ca76611e3c8fce5675eb2fe[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:49:00 2020 +0530
+
+    corrected logo
+
+[33mcommit 2b28e32d50eb3ea762c6809d25534e71362ef49d[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 15:46:40 2020 +0530
+
+    cleaned files
+
+[33mcommit 1152d658b0c6b8dd65e11b2de0506c647139bf00[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:43:05 2020 +0530
+
+    corrected paths for README links
+
+[33mcommit 8ab4d41d66a8e554438597a561442b7198527a43[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 15:44:15 2020 +0530
+
+    README file for Public folder
+
+[33mcommit 77430c6ee0566b8267df210e69815c10e496860b[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 15:40:40 2020 +0530
+
+    README file for Upload folder
+
+[33mcommit 16b622b09be2bf480a3a49d5f0a205383b6192df[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 15:36:09 2020 +0530
+
+    README file for Views folder
+
+[33mcommit ac8b5415a7bbe6849325ac7512f173bdaae34e66[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 15:34:21 2020 +0530
+
+    README file for Views folder
+
+[33mcommit 79780de40135c84c736728eb2b3785004489027e[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 15:30:05 2020 +0530
+
+    README file for Partial folder
+
+[33mcommit cd2e6e2110365971a858de661a84de4003367bdc[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 15:28:31 2020 +0530
+
+    README file for Partial folder
+
+[33mcommit 3d1adc2924a81d81d838bd4fb65eedd596915950[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:25:10 2020 +0530
+
+    fixed Images
+
+[33mcommit 7ccb5dfea7757dbc8e20bb0ff8736d044a1232ef[m
+Author: SinhaShambhavi <k.sinha672@gmail.com>
+Date:   Sun Aug 2 15:24:16 2020 +0530
+
+    README file for Partial folder
+
+[33mcommit 2f9a8c1e10dea525d094955959dd71cf0ef3ae72[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:18:29 2020 +0530
+
+    Fixed README
+
+[33mcommit a313bf5c4981aa5110da86e2730b3aea27016a0c[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:15:21 2020 +0530
+
+    Added Proposed Solution to README
+
+[33mcommit 6d15a33ecbbea17996069abe87bec8a04dfff2ea[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:09:40 2020 +0530
+
+    corrected README
+
+[33mcommit 47e6a829d52b6193f4049f11beb4114e84e63653[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 15:03:22 2020 +0530
+
+    Corrected Naming Convention
+
+[33mcommit 83f90043634f71aac2b865496eb5619a152e01a6[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 14:50:06 2020 +0530
+
+    Fixed Markdown in line 54, README.md
+
+[33mcommit 25014f7ee5fc44a39578e62eacdaa03e30881c32[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 14:48:52 2020 +0530
+
+    Fixed : in Line 94, README.md
+
+[33mcommit 5f852d849b927af01d1eebf8bf0ef16ebc5aba5e[m
+Merge: a5caedb 776e3ec
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 14:46:05 2020 +0530
+
+    Fixed Merge Conflict
+
+[33mcommit a5caedb179ea71b38aed1addb2d5db5be55f3806[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 14:39:58 2020 +0530
+
+    Fixed README.md
+
+[33mcommit 776e3ecb276b2151e9747e31eb9d2f60a27cf199[m
+Merge: 395aecc 5457a63
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 14:32:54 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 395aecc188054045e25ba8a6f00e0beed12de5dd[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 14:32:23 2020 +0530
+
+    tensor board in readme
+
+[33mcommit 5457a6329a0a78bce3467be1a85d3521a01cf968[m
+Author: devangi14 <devangi536@gmail.com>
+Date:   Sun Aug 2 14:31:38 2020 +0530
+
+    cleaned stylesheets directory
+
+[33mcommit 2b0ca4022fdbb7bf71092e2257505d239e32bf59[m
+Author: devangi14 <devangi536@gmail.com>
+Date:   Sun Aug 2 14:30:17 2020 +0530
+
+    cleaned views directory
+
+[33mcommit fe0104ea8115f1eabe25609c9280936bd357fb67[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 14:29:53 2020 +0530
+
+    readme citing
+
+[33mcommit aebe6fde0cd242ec812dd0548edc47a22ccea51f[m
+Merge: 6586ce8 195f0b1
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 14:21:15 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 6586ce888bd780f97ee4fb8c32aaf9f2a16569fd[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 14:20:44 2020 +0530
+
+    readme_up date
+
+[33mcommit 195f0b1d59d349fd148811478cb5a5e20ad47af5[m
+Merge: 0008653 21345e2
+Author: Shambhavi Sinha <k.sinha672@gmail.com>
+Date:   Sun Aug 2 14:15:13 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 21345e22eac8c676f0a7ff0cdfee31ecc5e36e56[m
+Merge: 262d7cf b322cde
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 14:12:02 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 262d7cfc3cc7809ba07864385314bcedcc5c9922[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 14:11:29 2020 +0530
+
+    Added Sn Gans
+
+[33mcommit 0008653e2427b9428803e24e5ea515ab826e05ab[m
+Merge: 78c85ae b322cde
+Author: Shambhavi Sinha <k.sinha672@gmail.com>
+Date:   Sun Aug 2 14:10:22 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 78c85aee04faa7f01e8a8bfb8927f2cab422a730[m
+Author: Shambhavi Sinha <k.sinha672@gmail.com>
+Date:   Sun Aug 2 14:09:37 2020 +0530
+
+    cleaning of website folder
+
+[33mcommit b322cdea4778dfeba2740d29907b1a744dd8e352[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 14:09:35 2020 +0530
+
+    Added README_files
+
+[33mcommit cd85f2b291264d4f4224cdf4264bc2ea27f75a7e[m
+Merge: 48b9ebd c6e988e
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 14:09:30 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit c6e988e27a7f0eaa56e6de45cd9da9a3928c8322[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 13:58:59 2020 +0530
+
+    Documentation Improvements
+
+[33mcommit ecac91963a6afacac4ae8a3753801c56f7afad86[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 13:43:19 2020 +0530
+
+    Added SWIR Description
+
+[33mcommit 36352c8a652bc6b1780cb4d243fdcf89848fd53e[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 13:35:51 2020 +0530
+
+    Updated README
+
+[33mcommit 4e931b10fa98ab9b282078baed852e90229376a9[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sun Aug 2 12:52:58 2020 +0530
+
+    Started Documentation
+
+[33mcommit 48b9ebd5af01c6d5a6108df8436953be8e732524[m
+Merge: 6c55d36 2a7ffeb
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 12:33:20 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 2a7ffeb33f57ac9443c67dca7079d8772e16590b[m
+Author: Shambhavi Sinha <k.sinha672@gmail.com>
+Date:   Sun Aug 2 12:27:03 2020 +0530
+
+    Website Updated
+
+[33mcommit 6c55d36b14d607082c364f9593482e6e5cf4a9d8[m
+Merge: 2beaa03 98ec235
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 11:52:33 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 98ec235cbaeea4566f01e8b6d17323f7970e358e[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 11:51:15 2020 +0530
+
+    testing
+
+[33mcommit 2beaa03e76cbde4f54d1fc468ca805d6680b813a[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 11:50:28 2020 +0530
+
+    New data
+
+[33mcommit b2868eaab47d8ee18bf91c2acc0524cdf541e1d2[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 11:40:54 2020 +0530
+
+    cut
+
+[33mcommit f255df89fcb968233cb48a47021c6ee56ca08caa[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 11:37:46 2020 +0530
+
+    cut
+
+[33mcommit 8c17d5bbf1f90309d5567e1c5c291c622426e45f[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 10:39:35 2020 +0530
+
+    logo added
+
+[33mcommit 1f9ec8c0212b1ad4635ea067d1b87fc707617f2c[m
+Author: Poojan Panchal <pdavpoojan@gmail.com>
+Date:   Sun Aug 2 10:33:34 2020 +0530
+
+    updated Output folder
+
+[33mcommit ded5e3d527aa0f01393dab9885914ec4c6da5369[m
+Merge: e357c19 6d4c19b
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 08:47:29 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit e357c199a9f9884d1a03e8b62a503fdd9ad4f04f[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 08:45:21 2020 +0530
+
+    data
+
+[33mcommit 6d4c19b66eafda354cc29c1fbc0142bc2088f5a8[m
+Author: Vignesh Charan Raman <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 01:12:18 2020 +0530
+
+    Update README.md
+
+[33mcommit 3a45b224957661f365f3a122df47f5ffc8283697[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 01:11:21 2020 +0530
+
+    Renamed
+
+[33mcommit 31b22366235326e34d78be7f3e713c20a94aded1[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 01:06:39 2020 +0530
+
+    rename
+
+[33mcommit 51baf04288dfe2719196c6db5c0f3ad1c62d7a0d[m
+Author: Vignesh Charan Raman <vigneshcharan26@gmail.com>
+Date:   Sun Aug 2 01:01:47 2020 +0530
+
+    Update README.md
+
+[33mcommit 47d584abe5241088e31b28950a74fae2024ceff6[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sun Aug 2 01:00:01 2020 +0530
+
+    outputs
+
+[33mcommit daeaa498419275008b7563c6f48867c87f587afe[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 21:44:55 2020 +0530
+
+    rand func
+
+[33mcommit a201b994616c2be3552bc5d53126169ff2f6f1b6[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 21:13:07 2020 +0530
+
+    test
+
+[33mcommit e11931c5c07264480e0d7f69691987b2371a90fc[m
+Merge: c971f5a cd29494
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 18:25:44 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit c971f5a27d426b31082da5f61cc7fc92140e68ba[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 17:20:08 2020 +0530
+
+    rearanged
+
+[33mcommit 0b9db21cf66ceeba7288348b9f766d46d09ba991[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 17:15:40 2020 +0530
+
+    tiff
+
+[33mcommit cd29494bffaa11ec576767163d5f413201679adc[m
+Author: devangi <devangi536@gmail.com>
+Date:   Sat Aug 1 17:06:58 2020 +0530
+
+    Added website
+
+[33mcommit f930f706ce1d82562f33b44d76158069ce4ba790[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 16:28:48 2020 +0530
+
+    Arranged cut_paste.ipynb
+
+[33mcommit b112081a0023f302da09327d86732407afeeeae5[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 16:27:28 2020 +0530
+
+    Finally cleared up OCD. Chaos under Control.
+
+[33mcommit 29f647e27667058f38fe8ea9efc14bc9a3e3debe[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 16:26:25 2020 +0530
+
+    cleaning up chaos
+
+[33mcommit d31e722e976d42dc3e342cf1d84c3b5985e5437e[m
+Merge: 7685bda 543a6b8
+Author: Poojan Panchal <pdavpoojan@gmail.com>
+Date:   Sat Aug 1 16:16:53 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zeros into master
+
+[33mcommit 7685bda70ba207f0716a2f1c9e46062a6d379577[m
+Author: Poojan Panchal <pdavpoojan@gmail.com>
+Date:   Sat Aug 1 16:15:16 2020 +0530
+
+    added similarity matrix code
+
+[33mcommit 543a6b8e71b090021db179b6fbe7e26b5051c5f3[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 16:15:05 2020 +0530
+
+    cut_paste file
+
+[33mcommit 1d2b9ad7398fe15271ff5e7f3a33958a5e1958a0[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 15:53:13 2020 +0530
+
+    Reorganised Repository
+
+[33mcommit ff6a66b3b070390eea01612228f9b4fd26c0d916[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 15:38:09 2020 +0530
+
+    Added Similarity Matrix
+
+[33mcommit ffddeadcef96c6c1bf19386984fc6aa4c23e51c3[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 15:37:23 2020 +0530
+
+    Added Similarity Matrix
+
+[33mcommit 55881a935fe7026d293bf75829b1282e4e37f595[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 15:24:03 2020 +0530
+
+    original
+
+[33mcommit 4225bc4a2ae15867c86c159b119316edd8df2108[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 15:11:02 2020 +0530
+
+    cv updated
+
+[33mcommit 8f83c5bd39bbacd71cf1b3feb27a25a407f985cf[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 15:01:47 2020 +0530
+
+    cv method with png + tif
+
+[33mcommit dd96c8b84318eb7780bcb4604a178325fbcb233b[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 14:46:46 2020 +0530
+
+    changes in cv_test
+
+[33mcommit a99821daa355dc6a5df755cfbc303e035047439f[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 14:36:55 2020 +0530
+
+    Implemented initial Deep Prior inpainting
+
+[33mcommit ad2cfc37fa8043953e560db81eeacb5ac34b641c[m
+Author: Poojan Panchal <pdavpoojan@gmail.com>
+Date:   Sat Aug 1 14:16:02 2020 +0530
+
+    re-organised files directory (bringing order to chaos)
+
+[33mcommit c140326eb6d34cd799b3006c4002232a60907d50[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 13:42:22 2020 +0530
+
+    cv update
+
+[33mcommit df5516f9db019a29563ef64dbfcf80d4b82a072d[m
+Merge: 9b32f70 d6c1d7c
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 13:37:12 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 9b32f70d10e30c660890ca7a6ddae779ad997405[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 13:33:30 2020 +0530
+
+    cv test
+
+[33mcommit d6c1d7c89491c389ef5d88b087e44294cee7e05a[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 12:53:56 2020 +0530
+
+    Uodated README.md
+
+[33mcommit 30a5c0c0bbf6acb4947b48cfca2e3e0ae22c8d53[m
+Merge: 2a646d3 e9bba91
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 12:47:47 2020 +0530
+
+    merged
+
+[33mcommit 2a646d34ce017632f2561c671b71e08bc6bf8665[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 12:46:46 2020 +0530
+
+    Improved dropouts_mask.py
+
+[33mcommit e9bba91c49afce707bca884f83e9f46bf630aae9[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 12:42:39 2020 +0530
+
+    org
+
+[33mcommit c16843a45e67957db5a2d1ee8a9d475d1205a9ae[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 12:42:09 2020 +0530
+
+    Removed redundant mask.jpeg
+
+[33mcommit d7c7e7d75ad7f895b6745cb3c21a1a4ad244a16e[m
+Author: jaynammodi <jaynammodi@gmail.com>
+Date:   Sat Aug 1 12:40:49 2020 +0530
+
+    Added Row and Column Dropout Detection as dropouts_mask.py
+
+[33mcommit adf4b11f3dc197214f7b6c0d843212616507248f[m
+Merge: f990737 f1cae1e
+Author: Poojan Panchal <pdavpoojan@gmail.com>
+Date:   Sat Aug 1 12:38:05 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zeros into master
+
+[33mcommit f990737f8c887fdb02fa36b016f9e2bc4f8668bc[m
+Author: Poojan Panchal <pdavpoojan@gmail.com>
+Date:   Sat Aug 1 12:37:19 2020 +0530
+
+    Added png images
+
+[33mcommit f1cae1e21ac6f98b0325ad62a7e3dcffd0d2f04e[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 12:36:22 2020 +0530
+
+    inverted mask
+
+[33mcommit d7f1967ea2b7be3fa4f58e2efa2247de395244ee[m
+Merge: 21bf5a6 ff8e77d
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 12:12:51 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 21bf5a6af96a7bd7ecbce1cced2ee738531cd562[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 12:10:13 2020 +0530
+
+    masking theshold
+
+[33mcommit ff70377b60499963b47fa1543fb107a9f87bedc3[m
+Author: anomius <swarajpurohit@gmail.com>
+Date:   Sat Aug 1 11:54:18 2020 +0530
+
+    masking
+
+[33mcommit ff8e77d5c2e74df02b5e03f7612a08a1148e2e01[m
+Merge: 647a9ff 4dc59f1
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 11:46:57 2020 +0530
+
+    Merge branch 'master' of https://github.com/its-charan-here/NM391_The-Ones-n-Zero
+
+[33mcommit 647a9ffc861fe3c0e41afd411ce43192e3adf42f[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 11:45:29 2020 +0530
+
+    New test cases
+
+[33mcommit 4dc59f1433c5333aceb533f63eeb1e7e1ab35f06[m
+Author: Vignesh Charan Raman <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 11:39:56 2020 +0530
+
+    to open rl0 files
+
+[33mcommit d00af90abb40811879bc934eee8c2acaa3fc4210[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 11:34:56 2020 +0530
+
+    New test cases
+
+[33mcommit fe482604acc255920f44751bdd816c664c64835a[m
+Author: devangi <devangi536@gmail.com>
+Date:   Sat Aug 1 10:50:19 2020 +0530
+
+    Added index.html
+
+[33mcommit 124c1497b8ffe44856745da64384f62cbaac2c50[m
+Author: Vignesh Charan <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 10:37:44 2020 +0530
+
+    Added Dataset(.rl0 files and metadata)
+
+[33mcommit 3dbdd5217126d18156fc49017553d292f7b834d8[m
+Author: Vignesh Charan Raman <vigneshcharan26@gmail.com>
+Date:   Sat Aug 1 10:26:43 2020 +0530
+
+    Initial commit
