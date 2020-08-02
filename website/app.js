@@ -20,12 +20,12 @@ let {PythonShell} = require('python-shell');//package to connect with python pro
 
 const spawn = require('child_process').spawn;//package to connect with python programs
 
-var bodyparser=require("body-parser");
+var bodyparser=require("body-parser");//package to get data from forms
 
 app.use(bodyparser.urlencoded({extended:true}));
 
 
-
+//The express package will explicity serve the following files
 app.use(express.static(__dirname+"/public"));
 app.use(express.static(__dirname+"/fonts"));
 app.use(express.static(__dirname+"/generative_inpainting"));
