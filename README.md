@@ -118,7 +118,7 @@ array([[4, 4, 4, ..., 5, 5, 4],
 
 - ***In order to have a reliable and efficient solution, we reverted back to binary parsing and kept the data to its Predefined 16 bit format and Started working on a neural network which would be able to process this 16 bit data.***
 
-- ***This eliminated the option for us to borrow and reference code from other commercial and free solutions being used to reconstruct day to day images as they supported onlt 8 bit data.***
+- ***This eliminated the option for us to borrow and reference code from other commercial and free solutions being used to reconstruct day to day images as they supported only 8 bit data.***
 
 ## Developing a Neural Network for the Reconstruction
 
