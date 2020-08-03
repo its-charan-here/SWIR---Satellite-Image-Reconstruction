@@ -3,9 +3,16 @@
 }
 */
 .jumbotron{
+
 	margin-top: 5px;
 	background: #d1e0ebc4;
 	/* background:#1c2331; */
+}
+
+#logo{
+	height:50px;
+	width: 50px;
+	
 }
 
 /*body{
@@ -13,12 +20,6 @@
 
 }
 */
-#logo{
-	height:50px;
-	width: 50px;
-	
-}
-
 nav{
 	background: transparent;
 }
@@ -313,10 +314,23 @@ font-family: roboto mono;
 	color: white;
   }
 
+  .calcu{
+	  text-align: center;
+	  color:#033454 ;
+  }
+
   .submit{
 	  margin-left: 0%;
   }
+
+  .comp{
+      margin-left: -8%;
+  }
   
+.submit1{
+	margin-right: 0%;
+}
+
    .custom-file-input::before {
 	/* content: 'Select an Image'; */
 	color: black;
