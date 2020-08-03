@@ -36,7 +36,7 @@ NM391_The-Ones-n-Zeros/
 
 ***This Section aims to provide a direct comparison of our lates model with other Available Solutions and our past algorithms.***
 	
-		<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/testing/gi_cv_new_data/histograms.PNG" height=400px>
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/testing/gi_cv_new_data/histograms.PNG" height=400px>
 	
 * ***From Left,***
 	1. Old Algorithm Using GANS with old 8-bit Data.
