@@ -32,6 +32,18 @@ NM391_The-Ones-n-Zeros/
 
 - In case you have trouble with the Redirect, Direct Link : https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
 
+# Comparison
+
+***This Section aims to provide a direct comparison of our lates model with other Available Solutions and our past algorithms.***
+	
+		<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/testing/gi_cv_new_data/histograms.PNG" height=400px>
+	
+* ***From Left,***
+	1. Old Algorithm Using GANS with old 8-bit Data.
+	2. Old Algorithm Using OpenCV.
+	3. **New Algorithm Using GANS with 16-bit Data.**
+	4. Original Image.
+
 # Sample Output
 
 - https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/tree/master/final_output
