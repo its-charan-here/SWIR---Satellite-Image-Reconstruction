@@ -39,7 +39,7 @@ def correrct(l,mask,mode=0):
     return dst    
 
 
-f=r"../horiz_data.tif"
+f=r"D:\SIH 2020\NM391_The-Ones-n-Zeros\day3_data\test\148045_2048x2048.tif"
 
 
 
@@ -49,7 +49,7 @@ inpaint_arr = correrct(l,mask_t(l,0,300),1)
 t=Image.fromarray(inpaint_arr)
 
 
-t.save("cv_horiz_te.tif")
+t.save("test_out.tif")
 
 array_to_jpg_image(inpaint_arr).save("cv_horiz_te.jpg")
 
