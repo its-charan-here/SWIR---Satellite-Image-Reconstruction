@@ -24,7 +24,11 @@
 
 ## USAGE INSTRUCTIONS
 
-### Download Link : [MIRROR - mega.nz](https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw)
+## Website
+
+- In order to have a clean and decent User Interface/User Experience, a responsive website has been Created which integrates the Python Backend with a Embedded JS, Bootstrap & CSS frontend. These files are listed under `/website`
+
+### Download Link : [MIRROR - mega.nz](https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw) | [Alternate Mirror - Google Drive](https://drive.google.com/drive/folders/1rMiMLidp4z4KsNalnZFFvHf3wiycHKgX?usp=sharing)
 
 - Download Weights from the given Mirror and Place them in `NM391_The-Ones-n-Zeros/gans_reconstruction/logs`
 
@@ -451,10 +455,6 @@ array([[209, 206, 210, ..., 212, 213, 201],
 }
 ```
 
-
-### Instructions for dropouts_mask.py : 
-
-- Syntax : `python dropouts_mask.py (input_file) [OPTIONAL = output_extension png|tiff|tif]`
 
 [aletheia]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/aletheia_cropped.png
 [mitlogo]: https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/mit.png
