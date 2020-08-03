@@ -48,7 +48,10 @@ NM391_The-Ones-n-Zeros/
 3 directories, 5 files
 ```
 
-- In case you have trouble with the Redirect, Direct Link : https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
+- In case you have trouble with the Redirect, Direct Link :
+
+	* MEGA : https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
+	* Google Drive : https://drive.google.com/drive/folders/1rMiMLidp4z4KsNalnZFFvHf3wiycHKgX?usp=sharing
 
 ### Requirements
 
