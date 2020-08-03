@@ -58,7 +58,7 @@ NM391_The-Ones-n-Zeros/
 
 ### Execution
 
-- ***All the source Files are Stored under `gans_reconstruction` for easier access. The file tree is as shown below : ***
+- ***All the source Files are Stored under*** `gans_reconstruction` ***for easier access. The file tree is as shown below :***
 
 ```
 gans_reconstruction
