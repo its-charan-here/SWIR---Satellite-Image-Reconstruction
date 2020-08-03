@@ -34,23 +34,14 @@ class GAN_Reconstruction(Model):
             [-1, 1] as predicted image
         """
         xin = x
-        # print(x)
-        # print(x.shape)
-        # print(type(x))
-
+        
         offset_flow = None
         ones_x = tf.ones_like(x)[:, :, :, 0:1]
         x = tf.concat([x, ones_x, ones_x*mask], axis=3)
         
-        # print("\n================\n")
-        # print(x)
-        # print(x.shape)
-        # print(type(x))
 
-
-
-
-        # two stage network
+        #  two stage network
+        print("Two stagged Network")
         cnum = 48
         with tf.variable_scope(name, reuse=reuse), \
                 arg_scope([gen_conv, gen_deconv],
@@ -277,10 +268,7 @@ class GAN_Reconstruction(Model):
         xin = batch_incomplete
         
         # inpaint
-        # print("Inpaint")
-
-        print(xin.shape)
-        print(masks.shape)
+        
         x1, x2, flow = self.build_inpaint_net(
             xin, masks, reuse=reuse, training=is_training)
         batch_predict = x2
