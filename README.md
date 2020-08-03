@@ -8,6 +8,26 @@
 
 ## Smart India Hackathon 2020
 
+## USAGE INSTRUCTIONS
+
+- Download Weights from the given Mirror and Place them in `NM391_The-Ones-n-Zeros/gans_reconstruction/logs`
+
+- Thus, a new Directory will be created which enlists the files as follows : 
+
+```
+NM391_The-Ones-n-Zeros/                                         
+└── gans_reconstruction
+     └── logs                                                              
+          └── model_weights
+              ├── checkpoint                                                    
+              ├── here.txt
+              ├── snap-122000.data-00000-of-00001
+              ├── snap-122000.index
+              └── snap-122000.meta
+
+3 directories, 5 files
+```
+
 # Sample Output
 
 - https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/tree/master/final_output
