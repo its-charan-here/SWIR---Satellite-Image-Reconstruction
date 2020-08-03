@@ -13,7 +13,7 @@
 - https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/tree/master/final_output
 
 # Download Weights
-- https://mega.nz/folder/3t0wTaqS
+- https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
 * Add these Files to `logs/model_dir`
 
 ### Satellite Imagery
