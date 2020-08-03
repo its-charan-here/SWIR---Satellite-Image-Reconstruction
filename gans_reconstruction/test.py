@@ -9,61 +9,58 @@ import neuralgym as ng
 from PIL import Image
 import tifffile as tiff
 from tifffile import imsave
-import warnings
 
 
 from reconstruction_model import GAN_Reconstruction
 
-warnings.filterwarnings("ignore")
-
+def load_model():
+    model = GAN_Reconstruction()
+    return model
+    
 
 print("python function called")
 
+def inpainting_sat(input_arr,model):
+    parser = argparse.ArgumentParser()
+    # parser.add_argument('--image', default='', type=str,
+    #                     help='The filename of image to be completed.')
+    # parser.add_argument('--output', default='test_output/output.tif', type=str,
+    #                     help='Where to write output.')
+    parser.add_argument('--checkpoint_dir', default='logs/model_weights', type=str,
+                        help='The directory of tensorflow checkpoint.')
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--image', default='', type=str,
-                    help='The filename of image to be completed.')
-parser.add_argument('--output', default='test_output/output.tif', type=str,
-                    help='Where to write output.')
-parser.add_argument('--checkpoint_dir', default='logs/model_weights', type=str,
-                    help='The directory of tensorflow checkpoint.')
-
-args, unknown = parser.parse_known_args()
-
-
-path_img = args.image
-
-output_path = args.output
+    args, unknown = parser.parse_known_args()
 
 
-print("Gonna Start")
-# print(path_img) 
-# print(type(path_img))
+    # path_img = args.image
+    # output_path = args.output
 
-def array_to_jpg_image(f):
-    l=(f*(255/4095))//1
-    gray=np.uint8(l)
-    return gray
 
-def mask_t(l,flag,t):
-    d=l.shape
-    k= np.zeros(d,dtype=np.uint8)
-    if flag == 0:  
-        temp=np.where(l<=t)
-        k[temp]=255                                                
-    elif flag == 1:        
-        temp=np.where(l>=t)
-        k[temp]=255
-    return k
+    # print("Gonna Start")
+    # print(path_img) 
+    # print(type(path_img))
 
-if __name__ == "__main__":
+    def array_to_jpg_image(f):
+        l=(f*(255/4095))//1
+        gray=np.uint8(l)
+        return gray
+
+    def mask_t(l,flag,t):
+        d=l.shape
+        k= np.zeros(d,dtype=np.uint8)
+        if flag == 0:  
+            temp=np.where(l<=t)
+            k[temp]=255                                                
+        elif flag == 1:        
+            temp=np.where(l>=t)
+            k[temp]=255
+        return k
+
     FLAGS = ng.Config('sat_reconstruction.yml')
-    print("hey")
-    # ng.get_gpus(1)
+    # print("hey")
 
-    model = GAN_Reconstruction()
 
-    image = tiff.imread(path_img)
+    image = input_arr
     image1 = image
     ratio = np.amax(image)/256
     stacked_img = np.stack((image/ratio,)*3,axis=-1)
@@ -86,7 +83,6 @@ if __name__ == "__main__":
     # print(mask)
     # print(image.shape)
     # print(mask.shape)
-    # mask = cv2.resize(mask, (0,0), fx=0.5, fy=0.5)
 
     assert image.shape == mask.shape
 
@@ -95,7 +91,7 @@ if __name__ == "__main__":
     image1 = image1[:h//grid*grid, :w//grid*grid] 
     image = image[:h//grid*grid, :w//grid*grid,:]
     mask = mask[:h//grid*grid, :w//grid*grid,:]
-    print('Shape of image: {}'.format(image.shape))
+    # print('Shape of image: {}'.format(image.shape))
 
     image = np.expand_dims(image, 0)
     mask = np.expand_dims(mask, 0)
@@ -106,7 +102,7 @@ if __name__ == "__main__":
     with tf.Session(config=sess_config) as sess:
         input_image = tf.constant(input_image, dtype=tf.float32)
         output = model.build_server_graph(FLAGS, input_image,reuse=tf.AUTO_REUSE)
-        print("Model returned")
+        # print("Model returned")
         output = (output + 1.) * 127.5
         output = tf.reverse(output, [-1])
         output = tf.saturate_cast(output, tf.uint8)
@@ -119,25 +115,24 @@ if __name__ == "__main__":
             var_value = tf.contrib.framework.load_variable(args.checkpoint_dir, from_name)
             assign_ops.append(tf.assign(var, var_value))
         sess.run(assign_ops)
-        print('Model loaded.')
+        # print('Model loaded.')
         result = sess.run(output)
 
-        print("Gonna flush the output")
+        # print("Gonna flush the output")
         final_array = result[0][:, :, ::-1]*ratio//1
         final_array = final_array[:,:,1]
         final_array = final_array.astype(np.uint16)
         # print(final_array.shape)
         # print(final_array.dtype)
         
-        l = []
+        out = []
         l1 = image1
         l2 = final_array
         mask=mask_t(l1,0,300)
         k = np.where(mask==255)
-        l=l1
-        l[k]=(l2[k])
-            
-        imsave(output_path,l)
-
-
-        print("\n\n\nOUTPUT GENERATED\n\n\n")
+        out=l1
+        out[k]=(l2[k])
+    
+        # print("\n\n\nOUTPUT GENERATED\n\n\n")
+        
+        return out
