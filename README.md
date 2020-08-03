@@ -40,7 +40,7 @@ NM391_The-Ones-n-Zeros/
 	
 	* tensorflow v1.5.0 through v1.7.0
 	
-
+	* tensorflow toolkit neuralgym : `pip install git+https://github.com/JiahuiYu/neuralgym`
 
 # Comparison
 
