@@ -1,1 +1,3 @@
-Weights for GANS : https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
+Weights for GANS :
+	- MEGA : https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
+	- Google Drive : https://drive.google.com/drive/folders/1rMiMLidp4z4KsNalnZFFvHf3wiycHKgX?usp=sharing
