@@ -32,6 +32,16 @@ NM391_The-Ones-n-Zeros/
 
 - In case you have trouble with the Redirect, Direct Link : https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
 
+### Requirements
+
+- The following modules are required in order to ensure proper functioning of the Program :
+
+	* Python 3.× : https://python.org
+	
+	* tensorflow v1.5.0 through v1.7.0
+	
+
+
 # Comparison
 
 ***This Section aims to provide a direct comparison of our lates model with other Available Solutions and our past algorithms.***
@@ -52,17 +62,19 @@ This section aims to track the progress of our neural network plotted in accorda
 
 <img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/input.png" height=300px>
 
+	- SSIM with Ground Truth : 0.9314753871768957
+
 * Old 8-bit GANS
 
 <img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans1.png" height=300px>
 
-	- SSIM with Ground Truth : ``
+	- SSIM with Ground Truth : 0.9942820439040533
 
 * 16-bit GANS - 82 epochs
 
 <img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans82.png" height=300px>
 
-	- SSIM with Ground Truth : ``
+	- SSIM with Ground Truth : 0.9986725530035611
 
 * 16-bit GANS - 119 epochs
 
@@ -86,7 +98,7 @@ This section aims to track the progress of our neural network plotted in accorda
 
 <img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans359.png" height=300px>
 
-	- SSIM with Ground Truth : ``
+	- SSIM with Ground Truth : 0.9996847497074818
 
 * Ground Truth
 
