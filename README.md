@@ -40,7 +40,7 @@ NM391_The-Ones-n-Zeros/
 	
 	* tensorflow v1.5.0 through v1.7.0
 	
-
+	* tensorflow toolkit neuralgym : `pip install git+https://github.com/JiahuiYu/neuralgym`
 
 # Comparison
 
@@ -80,19 +80,19 @@ This section aims to track the progress of our neural network plotted in accorda
 
 <img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans119.png" height=300px>
 
-	- SSIM with Ground Truth : ``
+	- SSIM with Ground Truth : 0.9993279604107491
 
 * 16-bit GANS - 201 epochs
 
 <img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans201.png" height=300px>
 
-	- SSIM with Ground Truth : ``
+	- SSIM with Ground Truth : 0.9993420019395316
 
 * 16-bit GANS - 237 epochs
 
 <img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans237.png" height=300px>
 
-	- SSIM with Ground Truth : ``
+	- SSIM with Ground Truth : 0.9996917811413732
 
 * 16-bit GANS - 359 epochs
 

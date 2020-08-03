@@ -14,8 +14,8 @@ def array_to_jpg_image(f):
     return im
 
 def f_up(fol):
-    t=random.randrange(2,270)
-    w=random.randrange(1,4)
+    t=random.randrange(2,4000)
+    w=random.randrange(1,7)
     fol[:,t:t+w]=0
     return l
 dt =np.dtype(np.uint16)
@@ -26,7 +26,8 @@ for _ in f:
     #print(l.dtype,img.dtype)
 
     l=f_up(l)
-    while random.randrange(1,9)>=7:
+    n=5
+    while random.randrange(1,20)>=2:
         l=f_up(l)
     imsave("veri/c____"+_,l)
     array_to_jpg_image(l).save("veri_jpg/c____"+_[:-4]+".jpg")
