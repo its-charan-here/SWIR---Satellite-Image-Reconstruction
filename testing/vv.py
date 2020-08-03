@@ -5,7 +5,7 @@ import os
 import timeit
 start = timeit.default_timer() 
 from tifffile import imsave
-f=r"D:\SIH 2020\NM391_The-Ones-n-Zeros\testing\gi_cv_new_data\original.tif"
+f=r"D:\SIH 2020\NM391_The-Ones-n-Zeros\final_output\Day3_mentoring_Output\horiz_data.tif"
 img = Image.open(f)
 l = np.array(img)
 k=l[:8*(l.shape[0]//8),:8*(l.shape[1]//8)]
