@@ -24,6 +24,10 @@
 
 ## USAGE INSTRUCTIONS
 
+## Website
+
+- In order to have a clean and decent User Interface/User Experience, a responsive website has been Created which integrates the Python Backend with a Embedded JS, Bootstrap & CSS frontend. These files are listed under `/website`
+
 ### Download Link : [MIRROR - mega.nz](https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw)
 
 - Download Weights from the given Mirror and Place them in `NM391_The-Ones-n-Zeros/gans_reconstruction/logs`
