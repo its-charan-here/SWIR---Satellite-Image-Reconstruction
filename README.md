@@ -36,13 +36,65 @@ NM391_The-Ones-n-Zeros/
 
 ***This Section aims to provide a direct comparison of our lates model with other Available Solutions and our past algorithms.***
 	
-<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/testing/gi_cv_new_data/histograms.PNG" height=400px>
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/histograms.png" height=400px>
 	
 * ***From Left,***
 	1. Old Algorithm Using GANS with old 8-bit Data.
 	2. Old Algorithm Using OpenCV.
 	3. **New Algorithm Using GANS with 16-bit Data.**
 	4. Original Image.
+	
+## Progress of New 16-bit GANS
+
+This section aims to track the progress of our neural network plotted in accordance with the epochs developed.
+
+* ***INPUT IMAGE***
+
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/input.png" height=300px>
+
+* Old 8-bit GANS
+
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans1.png" height=300px>
+
+	- SSIM with Ground Truth : ``
+
+* 16-bit GANS - 82 epochs
+
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans82.png" height=300px>
+
+	- SSIM with Ground Truth : ``
+
+* 16-bit GANS - 119 epochs
+
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans119.png" height=300px>
+
+	- SSIM with Ground Truth : ``
+
+* 16-bit GANS - 201 epochs
+
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans201.png" height=300px>
+
+	- SSIM with Ground Truth : ``
+
+* 16-bit GANS - 237 epochs
+
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans237.png" height=300px>
+
+	- SSIM with Ground Truth : ``
+
+* 16-bit GANS - 359 epochs
+
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/gans359.png" height=300px>
+
+	- SSIM with Ground Truth : ``
+
+* Ground Truth
+
+<img src="https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/blob/master/.README_files/original.png" height=300px>
+
+
+
+
 
 # Sample Output
 
