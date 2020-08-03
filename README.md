@@ -10,6 +10,8 @@
 
 ## USAGE INSTRUCTIONS
 
+### Download Link : [MIRROR - mega.nz](https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw)
+
 - Download Weights from the given Mirror and Place them in `NM391_The-Ones-n-Zeros/gans_reconstruction/logs`
 
 - Thus, a new Directory will be created which enlists the files as follows : 
@@ -28,13 +30,11 @@ NM391_The-Ones-n-Zeros/
 3 directories, 5 files
 ```
 
+- In case you have trouble with the Redirect, Direct Link : https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
+
 # Sample Output
 
 - https://github.com/its-charan-here/NM391_The-Ones-n-Zeros/tree/master/final_output
-
-# Download Weights
-- https://mega.nz/folder/3t0wTaqS#XV5PhaO-eNDGJoDWxqGDHw
-* Add these Files to `logs/model_dir`
 
 ### Satellite Imagery
 
