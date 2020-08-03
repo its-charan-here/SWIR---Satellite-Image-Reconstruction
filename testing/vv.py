@@ -5,11 +5,11 @@ import os
 import timeit
 start = timeit.default_timer() 
 from tifffile import imsave
-f=""
+f=r"D:\SIH 2020\NM391_The-Ones-n-Zeros\testing\gi_cv_new_data\original.tif"
 img = Image.open(f)
 l = np.array(img)
 k=l[:8*(l.shape[0]//8),:8*(l.shape[1]//8)]
-imsave("output_reshaped",l)
+imsave("output_reshaped.tif",k)
 
 
 stop = timeit.default_timer()

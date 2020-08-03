@@ -1,0 +1,13 @@
+Similarity Index :
+SSIM value is calculated with compaired to Original : 
+
+
+1. Original vs input : 0.9314753871768957
+
+
+2. Original vs New Gans algo with new training data (359 epoches) : 0.9996847497074818 
+3. Original vs New Gans algo with new training data (82 epoches) : 0.9986725530035611
+
+4. Original vs Old Gans algo with old training data : 0.9942820439040533 
+
+5. Original vs OpenCV reconstructed output : 0.9963796319465636
